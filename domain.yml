@@ -1,0 +1,884 @@
+version: "3.1"
+
+intents:
+  - gold
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - faq
+  - kyc
+  - loans
+  - tractor
+  - crop
+  - insurance
+  - livestock
+  - farm
+  - weather
+  - payment
+  - mpin
+  - ask_pm_kisan_scheme
+  - ask_pm_kisan_beneficiaries
+  - ask_pm_kmy_scheme
+  - ask_pm_kmy_enrollment
+  - ask_pmfby_objective
+  - ask_pmfby_applications
+  - ask_miss_objective
+  - ask_miss_applications
+  - ask_aif_objective
+  - ask_aif_disbursal
+  - ask_fpos_objective
+  - ask_fpos_registration
+  - ask_nbhm_objective
+  - ask_nbhm_bee_colonies
+  - ask_mis_pss_objective
+  - ask_namo_drone_didi_objective
+  - ask_namo_drone_didi_drones
+  - ask_rkvy_dpr_focus
+  - ask_rkvy_agri_startup_startups
+  - ask_shc_purpose
+  - ask_shc_target
+  - ask_rad_objective
+  - ask_rad_area_covered
+  - ask_pdmc_goal
+  - ask_pdmc_area_covered
+  - ask_mif_purpose
+  - ask_mif_initial_corpus
+  - ask_pkvy_objective
+  - ask_pkvy_assistance
+  - ask_smam_objectives
+  - ask_smam_machinery_distributed
+  - ask_crop_residue_management_objective
+  - ask_crop_residue_management_fund_released
+  - ask_agro_forestry_focus
+  - ask_nfsm_objective
+  - ask_nfsm_seed_hubs
+  - ask_smsp_objective
+  - ask_nmeo_oil_palm_focus
+  - ask_nmeo_oil_palm_additional_area
+  - ask_midh_objective
+  - ask_midh_additional_area_covered
+  - ask_nbm_objective
+  - ask_nbm_bamboo_nurseries
+  - ask_isam_purpose
+  - ask_e_nam_scheme
+  - ask_movcdner_goal
+  - ask_movcdner_fund_released
+  - ask_smae_objective
+  - ask_smae_digital_initiatives
+  - ask_digital_agriculture_objective
+  - ask_agristack_foundational_layer
+  - ask_pm_kisan_scheme_brief
+  - ask_pm_kmy_scheme_brief
+  - ask_pmfby_scheme_brief
+  - ask_miss_scheme_brief
+  - ask_aif_scheme_brief
+  - ask_fpo_scheme_brief
+  - ask_nbhm_scheme_brief
+  - ask_mis_pss_scheme_brief
+  - ask_namo_drone_didi_scheme_brief
+  - ask_rkvy_dpr_scheme_brief
+  - ask_shc_scheme_brief
+  - ask_rad_scheme_brief
+  - ask_pdmc_scheme_brief
+  - ask_mif_scheme_brief
+  - ask_pkvy_scheme_brief
+  - ask_smam_scheme_brief
+  - ask_crm_scheme_brief
+  - ask_agro_forestry_scheme_brief
+  - ask_nfsm_scheme_brief
+  - ask_smsp_scheme_brief
+  - ask_nmeo_oil_palm_scheme_brief
+  - ask_midh_scheme_brief
+  - ask_nbm_scheme_brief
+  - ask_isam_scheme_brief
+  - ask_movcdner_scheme_brief
+  - ask_smae_scheme_brief
+  - ask_digital_agriculture_scheme_brief
+  - ask_seed_subsidy
+  - ask_fertilizer_subsidy
+  - ask_irrigation_subsidy
+  - ask_power_subsidy
+  - ask_export_subsidy
+  - ask_credit_subsidy
+  - ask_agriculture_equipment_subsidy
+  - ask_agriculture_infrastructure_subsidy
+  - ask_subsidies_available_to_farmers
+  - ask_schemes_available_to_farmers
+  - get_price
+  - ask_how_to_apply_PM_Kisan
+  - ask_documents_needed_PM_Kisan
+  - ask_how_to_apply_PM_KMY
+  - ask_documents_needed_PM_KMY
+  - ask_how_to_apply_PMFBY
+  - ask_documents_needed_PMFBY
+  - ask_how_to_apply_MISS
+  - ask_documents_needed_MISS
+  - ask_how_to_apply_AIF
+  - ask_documents_needed_AIF
+  - ask_how_to_apply_FPOs_scheme
+  - ask_documents_needed_FPOs_scheme
+  - ask_how_to_apply_NBHM_scheme
+  - ask_documents_needed_NBHM_scheme
+  - ask_how_to_apply_MIS_PSS
+  - ask_documents_needed_MIS_PSS
+  - ask_apply_Namo_Didi_Scheme
+  - ask_documents_Namo_Didi_Scheme
+  - ask_steps_Namo_Didi_Scheme
+  - ask_apply_RKVY_DPR
+  - ask_documents_RKVY_DPR
+  - ask_steps_RKVY_DPR
+  - ask_apply_SHC_scheme
+  - ask_documents_SHC_scheme
+  - ask_steps_SHC_scheme
+  - ask_apply_RAD_scheme
+  - ask_documents_RAD_scheme
+  - ask_steps_RAD_scheme
+  - ask_apply_PDMC_scheme
+  - ask_documents_PDMC_scheme
+  - ask_steps_PDMC_scheme
+  - ask_apply_MIF_scheme
+  - ask_documents_MIF_scheme
+  - ask_steps_MIF_scheme
+  - ask_apply_PKVY_scheme
+  - ask_documents_PKVY_scheme
+  - ask_steps_PKVY_scheme
+  - ask_apply_SMAM_scheme
+  - ask_documents_SMAM_scheme
+  - ask_steps_SMAM_scheme
+  - ask_apply_CRM_scheme
+  - ask_documents_CRM_scheme
+  - ask_steps_CRM_scheme
+  - ask_apply_Agro_forestry_scheme
+  - ask_documents_Agro_forestry_scheme
+  - ask_steps_Agro_forestry_scheme
+  - ask_apply_NFSM_scheme
+  - ask_documents_NFSM_scheme
+  - ask_steps_NFSM_scheme
+  - ask_apply_SMSP_scheme
+  - ask_documents_SMSP_scheme
+  - ask_steps_SMSP_scheme
+  - ask_apply_NMEO_Oil_Palm_scheme
+  - ask_documents_NMEO_Oil_Palm_scheme
+  - ask_steps_NMEO_Oil_Palm_scheme
+  - ask_apply_MIDH_scheme
+  - ask_documents_MIDH_scheme
+  - ask_steps_MIDH_scheme
+  - ask_apply_NBM_scheme
+  - ask_documents_NBM_scheme
+  - ask_steps_NBM_scheme
+  - ask_apply_ISAM_scheme
+  - ask_documents_ISAM_scheme
+  - ask_steps_ISAM_scheme
+  - ask_apply_MOVCD_NER_scheme
+  - ask_documents_MOVCD_NER_scheme
+  - ask_steps_MOVCD_NER_scheme
+  - ask_apply_SMAE_scheme
+  - ask_documents_SMAE_scheme
+  - ask_steps_SMAE_scheme
+  - ask_digi_agri
+  - apply_seed_subsidy
+  - documents_needed_seed_subsidy
+  - steps_needed_seed_subsidy
+  - apply_fertilizer_subsidy
+  - documents_needed_fertilizer_subsidy
+  - steps_needed_fertilizer_subsidy
+  - apply_irrigation_subsidy
+  - documents_needed_irrigation_subsidy
+  - steps_needed_irrigation_subsidy
+  - apply_power_subsidy
+  - documents_needed_power_subsidy
+  - steps_needed_power_subsidy
+  - apply_export_subsidy
+  - documents_needed_export_subsidy
+  - steps_needed_export_subsidy
+  - apply_credit_subsidy
+  - documents_needed_credit_subsidy
+  - steps_needed_credit_subsidy
+  - apply_agriculture_equipment_subsidy
+  - documents_needed_agriculture_equipment_subsidy
+  - steps_needed_agriculture_equipment_subsidy
+  - apply_agriculture_infrastructure_subsidy
+  - documents_needed_agriculture_infrastructure_subsidy
+  - steps_needed_agriculture_infrastructure_subsidy
+
+entities:
+  - product
+
+actions:
+  - action_get_price
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_faq:
+  - text: "Munafa is a platform where users can make payments via UPI and transfer money from bank to bank. Additionally, users, especially farmers, can apply for loans and insurance through Munafa."
+
+  utter_kyc:
+  - text: "To complete KYC on Munafa, users need to input their Aadhar number, upload both sides of their Aadhar card, submit a selfie from a well-lit room with a clean background, provide their address along with address proof (such as Aadhar card, voter ID card, or passport), and participate in a video call with one of Munafa's executives."
+
+  utter_loans:
+  - text: "Munafa offers various types of loans including Tractor Loan, Gold Loan, and Crop Loan."
+
+  utter_tractor:
+  - text: "Tractor Loan on Munafa is a type of financial assistance provided to individuals, particularly farmers, to purchase tractors. Users need to input the loan amount, duration, EMI amount, type of tractor desired, down payment amount, loan urgency, and payback method."
+
+  utter_crop:
+  - text: "Crop Loan on Munafa is financial assistance provided to farmers to support their agricultural activities such as purchasing seeds, fertilizers, and pesticides. Required information includes identification and address proof, land records, and crop details."
+
+  utter_gold:
+  - text: "Gold Loan on Munafa offers quick financing by leveraging the value of gold assets. Required information includes address proof and details about the quantity and quality of the gold intended to be pledged."
+
+  utter_insurance:
+  - text: "Types of insurances available are Livestock insurance, Farm Equipment Insurance and Weather Insurance."
+
+  utter_livestock:
+  - text: "Livestock Insurance on Munafa covers losses from accidents, illness in livestock, or other unforeseen events. Information required includes the number and types of animals owned, farm location, and animal health history in PDF format."
+
+  utter_farm:
+  - text: "Farm Equipment Insurance on Munafa safeguards buildings, machinery, and equipment from damage or theft. Information needed includes the current value and replacement cost of the equipment, along with a detailed list of buildings, machinery, and equipment."
+
+  utter_weather:
+  - text: "Weather Insurance on Munafa covers losses due to adverse weather conditions. Information needed includes local weather risks, crop type and variety, farm location, and land area owned in acres."
+
+  utter_payment:
+  - text: "Munafa allows payments via debit card, UPI, and net banking."
+
+  utter_mpin:
+  - text: "To change your M-Pin, navigate to the profile section, then app settings, and look for the option to change the M-Pin."
+
+  utter_pm_kisan_scheme:
+  - text: "PM-KISAN is a central sector scheme launched to supplement the financial needs of landholding farmers by transferring Rs. 6000 per year in three equal four-monthly installments into their bank accounts."
+
+  utter_pm_kisan_beneficiaries:
+  - text: "More than 11 crores beneficiaries (farmers) have been covered under PM-KISAN, with Rs. 2.81 lakh crores transferred through Direct Benefit Transfer (DBT)."
+
+  utter_pm_kmy_scheme:
+  - text: "PM-KMY is a contributory scheme launched to provide security to vulnerable farmer families by offering a monthly pension of Rs. 3000 once they attain 60 years of age, subject to certain criteria."
+
+  utter_pm_kmy_enrollment:
+  - text: "As of now, 23.38 lakh farmers have enrolled under the PM-KMY scheme."
+
+  utter_pmfby_objective:
+  - text: "The objective of PMFBY is to provide a simple and affordable crop insurance product to ensure comprehensive risk cover for crops against all non-preventable natural risks."
+
+  utter_pmfby_applications:
+  - text: "A total of 5549.40 lakh farmer applications have been insured under PMFBY since 2016-17."
+
+  utter_miss_objective:
+  - text: "MISS provides concessional short-term agri-loans to farmers practicing crop husbandry and allied activities at an interest rate of 4% per annum, with an additional 3% subvention for prompt repayment."
+
+  utter_miss_applications:
+  - text: "As of January 5, 2024, 465.42 lakh new KCC applications have been sanctioned under MISS, with a sanctioned credit limit of Rs. 5,69,974 crore."
+
+  utter_aif_objective:
+  - text: "AIF aims to address existing infrastructure gaps and mobilize investment in agriculture infrastructure, providing medium to long-term debt financing for post-harvest management infrastructure and community farming assets."
+
+  utter_aif_disbursal:
+  - text: "As of December 31, 2023, Rs. 33.209 crores have been sanctioned for 44,912 projects under AIF, mobilizing an investment of Rs. 56.471 crores in the agriculture sector."
+
+  utter_fpos_objective:
+  - text: "Farmer Produce Organizations or FPOs, this scheme aims to form and promote FPOs through financial assistance, matching equity grant, credit guarantee facility, and training and skill development support."
+
+  utter_fpos_registration:
+  - text: "As of December 31, 2023, a total of 7,774 FPOs were registered under the scheme in the country."
+  - text: "By the end of 2023, the scheme registered 7,774 FPOs nationwide."
+
+  utter_nbhm_objective:
+  - text: "The objective of the National Beekeeping and Honey Mission (NBHM) is to promote and develop scientific beekeeping and achieve the goal of 'Sweet Revolution' through various initiatives."
+
+  utter_nbhm_bee_colonies:
+  - text: "Till date, 23 lakhs bee colonies are registered on the Madhukranti portal under NBHM."
+
+  utter_mis_pss_objective:
+  - text: "MIS-PSS aims to protect growers of perishable agricultural and horticultural commodities from distress sale by intervening in the market to maintain economic prices."
+
+  utter_namo_drone_didi_objective:
+  - text: "The objective of Namo Drone Didi is to provide drones to Women Self Help Groups (SHGs) for providing rental services to farmers for agriculture purposes, particularly for the application of fertilizers and pesticides."
+
+  utter_namo_drone_didi_drones:
+  - text: "The scheme aims to provide drones to 15,000 selected Women Self Help Groups (SHGs) for providing rental services to farmers, with a subsidy covering 80% of the cost of drone and accessories."
+
+  utter_rkvy_dpr_focus:
+  - text: "RKVY-DPR focuses on the creation of pre & post-harvest infrastructure in agriculture and allied sectors to increase overall growth in agriculture and farmers' income."
+
+  utter_rkvy_agri_startup_startups:
+  - text: "Since 2019-20, 1524 start-ups have been selected under the RKVY Agri-startup Programme, with Rs. 106.25 crore released as grants-in-aid for funding."
+
+  utter_shc_purpose:
+  - text: "The Soil Health Card scheme provides information to farmers on the nutrient status of their soil and recommendations on appropriate dosages of nutrients for improving soil health and fertility."
+
+  utter_shc_target:
+  - text: "The Government of India has decided to conduct 5 crore soil samples across the country during the years 2023-24 to 2025-26 for developing a nationwide soil fertility map."
+  utter_rad_objective:
+  - text: "RAD aims to promote Integrated Farming Systems in rainfed areas to enable farmers to maximize returns and mitigate the impacts of droughts, floods, or other extreme weather events."
+
+  utter_rad_area_covered:
+  - text: "An area of 7.13 lakh hectares has been covered under the RAD programme from the year 2014-15 to the present."
+
+  utter_pdmc_goal:
+  - text: "The goal of PDMC is to increase water use efficiency at the farm level through Micro Irrigation technologies, thereby saving water, reducing input costs, and enhancing farmers' income."
+
+  utter_pdmc_area_covered:
+  - text: "From 2015-16 to 2022-23, an area of 78 lakh hectares has been covered under Micro Irrigation through the PDMC scheme."
+
+  utter_mif_purpose:
+  - text: "MIF aims to facilitate the expansion of Micro Irrigation coverage by providing loans to states/UTs at lower interest rates, thereby promoting water-efficient agricultural practices."
+
+  utter_mif_initial_corpus:
+  - text: "An initial corpus of Rs. 5000 crore was allocated to the Micro Irrigation Fund (MIF), with projects worth Rs. 4710.96 crore approved and loans disbursed to several states."
+
+  utter_pkvy_objective:
+  - text: "PKVY aims to increase soil fertility and promote healthy food production through organic practices without the use of agro-chemicals."
+
+  utter_pkvy_assistance:
+  - text: "A farmer receives Rs. 15,000 as incentives directly through DBT under the Paramparagat Krishi Vikas Yojana (PKVY)."
+
+  utter_smam_objectives:
+  - text: "SMAM aims to increase the reach of farm mechanization, promote 'Custom Hiring Centres', create hubs for hi-tech farm equipment, and ensure performance testing and certification of agricultural machinery."
+
+  utter_smam_machinery_distributed:
+  - text: "More than 15,75,719 agricultural machinery and equipment, including tractors, power tillers, and plant protection equipment, have been distributed under SMAM."
+
+  utter_crop_residue_management_objective:
+  - text: "The objective of the Crop Residue Management scheme is to prevent air pollution and loss of nutrients caused by burning crop residue by promoting in-situ management and setting up Farm Machinery Banks."
+
+  utter_crop_residue_management_fund_released:
+  - text: "A total of Rs. 3333.17 crore has been released under the Crop Residue Management scheme since its inception."
+
+  utter_agro_forestry_focus:
+  - text: "The Agro-forestry scheme focuses on promoting plantation on farmlands to improve livelihoods and increase forest cover."
+
+  utter_nfsm_objective:
+  - text: "The objective of NFSM is to increase production of rice, wheat, pulses, coarse cereals, and nutri-cereals through area expansion and productivity enhancement in identified districts."
+
+  utter_nfsm_seed_hubs:
+  - text: "25 seed-hubs have been established under NFSM to ensure availability of quality seed of latest improved varieties of Nutri cereals in the country."
+
+  utter_smsp_objective:
+  - text: "SMSP aims to cover the entire seed production chain, provide support for infrastructure development, improve capacity and quality of seed production, and create dedicated seed banks."
+
+  utter_nmeo_oil_palm_focus:
+  - text: "The focus of NMEO-Oil Palm is to promote oil palm cultivation for making the country self-sufficient in edible oils, with special emphasis on North-Eastern States and A&N Islands."
+
+  utter_nmeo_oil_palm_additional_area:
+  - text: "NMEO-Oil Palm aims to bring an additional area of 6.5 lakh hectares under Oil Palm plantation, with a focus on North-Eastern States and A&N Islands."
+
+  utter_midh_objective:
+  - text: "MIDH aims for holistic growth of the horticulture sector covering fruits, vegetables, spices, flowers, and other crops through various interventions like plantation infrastructure development, post-harvest management, and marketing infrastructure."
+
+  utter_midh_additional_area_covered:
+  - text: "Under MIDH, an additional area of 12.95 lakh hectares of identified horticulture crops has been covered."
+
+  utter_nbm_objective:
+  - text: "NBM aims for the development of the complete value chain of the bamboo sector, linking growers with consumers through a cluster approach."
+
+  utter_nbm_bamboo_nurseries:
+  - text: "Under NBM, 367 Bamboo Nurseries have been established to support the bamboo sector."
+
+  utter_isam_purpose:
+  - text: "ISAM aims to support state governments in governing agricultural produce marketing through market structure creation, capacity building, and access to market information."
+
+  utter_e_nam_scheme:
+  - text: "e-NAM is a pan-India electronic trading portal that networks existing APMC mandis to create a unified national market for agricultural commodities, facilitating transparent online trading."
+
+  utter_movcdner_goal:
+  - text: "The goal of MOVCDNER is to develop commodity-specific organic production clusters to link growers with consumers and support the entire value chain in the North Eastern Region."
+
+  utter_movcdner_fund_released:
+  - text: "Since 2015-16, Rs. 1035.17 crore has been released under MOVCDNER to support organic farming and value chain development in the North Eastern Region."
+
+  utter_smae_objective:
+  - text: "SMAE aims to make the extension system farmer-driven and accountable by disseminating technology through new institutional arrangements like ATMA at the district level."
+
+  utter_smae_digital_initiatives:
+  - text: "Digital initiatives include VISTAAR for access to agricultural resources, Apurva AI for capturing farmer innovations, Kisan Call Centre integration with VISTAAR, and Weather forecast integration through DAMU."
+
+  utter_digital_agriculture_objective:
+  - text: "The objective of Digital Agriculture is to develop a digital public infrastructure for agriculture to enable inclusive, farmer-centric solutions and support the growth of Agri Tech industry and start-ups."
+
+  utter_agristack_foundational_layer:
+  - text: "The foundational layer of the AgriStack architecture includes Core registries, Base databases, Farmers Database linked with land records, Geo-referencing of plots, Crop Survey, Crop planning, Soil Mapping, and Soil Fertility."
+
+  utter_pm_kisan_scheme_brief:
+  - text: "PM-KISAN is a central sector scheme launched to supplement the financial needs of landholding farmers by providing them with a financial benefit of Rs. 6000 per year in three equal four-monthly installments through Direct Benefit Transfer (DBT). As of now, Rs. 2.81 lakh crores have been transferred to more than 11 crores beneficiaries."
+
+  utter_pm_kmy_scheme_brief:
+  - text: "Pradhan Mantri Kisan Maandhan Yojna (PMKMY) is a central sector scheme launched on 12th September 2019 to provide security to the most vulnerable farmer families. PM-KMY is contributory scheme, small and marginal farmers (SMFs), subject to exclusion criteria, can opt to become member of the scheme by paying monthly subscription to the Pension Fund. Similar, amount will be contributed by the Central Government. The applicants between the age group of 18 to 40 years will have to contribute between Rs. 55 to Rs. 200 per month till they attain the age of 60. PMKMY is taking care of the farmers during their old age and provides Rs. 3,000 monthly pension to the enrolled farmers once they attain 60 years of age, subject to exclusion criteria. Life Insurance Corporation (LIC) is pension fund manager and registration of beneficiaries is done through CSC and State Govts. So far 23.38 lakh farmers have enrolled under the scheme."
+
+  utter_pmfby_scheme_brief:
+  - text: "PMFBY provides a simple and affordable crop insurance product to farmers against non-preventable natural risks from pre-sowing to post-harvest. Since its launch, over 5549.40 lakh farmer applications have been insured, and Rs. 150589.10 crore has been paid as claims."
+
+  utter_miss_scheme_brief:
+  - text: "The Interest Subvention Scheme (ISS) provides concessional short term agri-loans to the farmers practicing crop husbandry and other allied activities like animal husbandry, dairying and fisheries. ISS is available to farmers availing short term crop loans up to Rs.3.00 lakh at an interest rate of 7% per annum for one year. Additional 3% subvention is also given to the farmers for prompt and timely repayment of loans thus reducing the effective rate of interest to 4% per annum. The benefit of ISS is also available for post-harvest loans against Negotiable Warehouse Receipts (NWRs) on crop loans for a further period of six months post-harvest to small and marginal farmers having Kisan Credit Cards (KCCs), on occurrence of natural calamities and severe natural calamities. As on 05-01-2024, 465.42 lakh new KCC applications have been sanctioned with a sanctioned credit limit of Rs. 5,69,974 crore as part of the drive."
+
+  utter_aif_scheme_brief:
+  - text: "In order to address the existing infrastructure gaps and mobilize investment in agriculture infrastructure, Agri Infra Fund was launched under Aatmanirbhar Bharat Package. AIF was introduced with a vision to transform the agriculture infrastructure landscape of the country. The Agriculture Infrastructure Fund is a medium - long term debt financing facility for investment in viable projects for post- harvest management infrastructure and community farming assets through interest subvention and credit guarantee support. The Fund of Rs. 1 lakh crore under the scheme will be disbursed from FY 2020-21 to FY2025-26 and the support under the scheme will be provided for the duration of FY2020-21 to FY2032-33. Under the scheme, Rs. 1 Lakh Crore will be provided by banks and financial institutions as loans with interest subvention of 3% per annum and credit guarantee coverage under CGTMSE for loans up to Rs. 2 Crores. Further, each entity is eligible to get the benefit of the scheme for up to 25 projects located in different LGD codes. Eligible beneficiaries include Farmers, Agri-entrepreneurs, Start-ups, Primary Agricultural Credit Societies (PACS), Marketing Cooperative Societies, Farmer Producers Organizations(FPOs), Self Help Group (SHG), Joint Liability Groups (JLG), Multipurpose Cooperative Societies, Central/State agency or Local Body sponsored Public Private Partnership Projects, State Agencies, Agricultural Produce Market Committees (Mandis), National & State Federations of Cooperatives, Federations of FPOs (Farmer Produce Organizations) and Federations of Self Help Groups (SHGs)."
+  utter_fpo_scheme_brief:
+  - text: "The Government of India launched the Central Sector Scheme (CSS) for “Formation and Promotion of 10,000 Farmer Producer Organizations (FPOs)” in the year 2020. The scheme has a total budgetary outlay of Rs.6865 crores. Formation & promotion of FPOs are to be done through Implementing Agencies (IAs), which further engage Cluster Based Business Organizations (CBBOs) to form & provide professional handholding support to FPOs for a period of 5 years. FPOs get a financial assistance upto Rs 18.00 lakh per FPO for a period of 03 years. In addition to this, provision has been made for matching equity grant upto Rs. 2,000 per farmer member of FPO with a limit of Rs. 15.00 lakh per FPO and a credit guarantee facility upto Rs. 2 crore of project loan per FPO from eligible lending institution to ensure institutional credit accessibility to FPOs. Suitable provisions have been made for training and skill development of FPOs."
+
+  utter_nbhm_scheme_brief:
+  - text: "Keeping in view the importance of beekeeping, a new Central Sector Scheme entitled National Beekeeping & Honey Mission (NBHM) was launched in 2020 under Atma Nirbhar Bharat Abhiyan for its implementation in the field for overall promotion and development of scientific beekeeping & to achieve the goal of “Sweet Revolution”. Some of the achievements include; Honeybees/ beekeeping have been approved as 5th Input for Agriculture. 4 World Class State of the Art Honey Testing Labs and 35 Mini Honey Testing Labs have been sanctioned under National Beekeeping & Honey Mission (NBHM) for testing of honey. Madhukranti portal has been launched for online registration of Beekeepers/ Honey Societies/ Firms/ Companies. Till date 23 lakhs bee colonies registered on Portal. 100 Honey FPOs targeted under 10,000 FPOs scheme in the country. 88 FPOs have been registered by NAFED, NDDB & TRIFED. 25 States/UTs have been covered under NBHM under MM-I, II & III. 160 Projects sanctioned under MM- I, II & III of Rs. 202.00 crores."
+
+  utter_mis_pss_scheme_brief:
+  - text: "MIS-PSS aims to protect growers of perishable agricultural and horticultural commodities from distress sale during bumper crops. It includes the Price Support Scheme (PSS) for pulses, oilseeds, and copra, and the Market Intervention Scheme (MIS) for other perishable commodities."
+
+  utter_namo_drone_didi_scheme_brief:
+  - text: "The Government has recently approved a Central Sector Scheme for providing drones to the Women Self Help Group (SHGs) for the period from 2024-25 to 2025-26 with an outlay of Rs. 1261 Crores. The scheme aims to provide drones to 15000 selected Women Self Help Group (SHGs) for providing rental services to farmers for agriculture purpose (application of fertilizers and pesticides). Under this Scheme, Central Financial Assistance @ 80% of the cost of drone and accessories/ancillary charges upto a maximum of Rs. 8.0 Lakhs will be provided to the women SHGs for purchase of drones. The Cluster Level Federations (CLFs) of SHGs may raise the balance amount (total cost of procurement minus subsidy) as loan under National Agriculture Infra Financing Facility (AIF). Interest subvention @ 3% on the AIF loan will be provided to the CLFs. The scheme will also provide sustainable business and livelihood support to SHGs and they would be able to earn additional income of at least of Rs. 1.0 lakh per annum."
+
+  utter_rkvy_dpr_scheme_brief:
+  - text: "The scheme focuses on creation of pre & post-harvest infrastructure in agriculture and allied sectors that help in supply of quality inputs, market facilities, etc to farmers. It provides flexibility and autonomy to states to implement projects as per the local farmers’ needs and priorities from a bouquet of activities in agriculture and allied sectors. The scheme aims to fill the resources gap of agriculture and allied sectors by providing financial support to states for undertaking various activities to increase in overall growth of agriculture and allied sectors and farmers’ income. Under RKVY Agri-startup Programme, since 2019-20, 1524 Start-ups have been selected and Rs. Rs. 106.25 crore released as grants-in-aid for funding the Start-ups."
+
+  utter_shc_scheme_brief:
+  - text: "Soil health card provides information to farmers on nutrient status of their soil along with recommendation on appropriate dosage of nutrients to be applied for improving soil health and its fertility. The indicators are typically based on farmers' practical experience and knowledge of local natural resources. The card lists soil health indicators that can be assessed without the aid of technical or laboratory equipment. The Scheme rolls out a decentralized system of soil testing which will help in developing a nationwide soil fertility map on a GIS platform that can easily be integrated with the real time decision support systems being developed. In order to develop the soil fertility map, Government of India has decided to conduct 5 Crore Soil Samples across the country during year 2023-24 to 2025-26."
+
+  utter_rad_scheme_brief:
+  - text: "RAD is being implemented since 2014-15. RAD adopts an area based approach in cluster mode for promoting Integrated Farming System (IFS) which focuses on multi-cropping, rotational cropping, inter-cropping, mixed cropping practices with allied activities like horticulture, livestock, fishery, apiculture etc. to enable farmers not only in maximizing the farm returns for sustaining livelihood, but also to mitigate the impacts of drought, flood or other extremes weather events. An amount of Rs. 1673.58 crores has been released and an area of 7.13 lakh hectare has been covered under RAD programme from the year 2014-15 to till date."
+
+  utter_pdmc_scheme_brief:
+  - text: "In order to increase water use efficiency at the farm level through Micro Irrigation technologies i.e. drip and sprinkler irrigation systems, Per Drop More Crop (PDMC) scheme was launched during 2015-16. The Micro Irrigation helps in water saving as well as reduced fertilizer usage through fertigation, labour expenses, other input costs and overall income enhancement of farmers. It also supports micro level water harvesting, storage, management etc. activities as Other Interventions (OI) to supplement source creation for Micro Irrigation. OI activities allowed on need basis up to 40% of the total allocation for North East States, Himalayan States, Jammu & Kashmir, Ladakh and up to 20% for other States. An area of 78 lakh hectare has been covered under Micro irrigation through the PDMC scheme from 2015-16 to 2022-23."
+
+  utter_mif_scheme_brief:
+  - text: "A Micro Irrigation Fund (MIF) of initial corpus Rs 5000 crore has been created with NABARD with major objective to facilitate the States in mobilizing the resources for expanding coverage of Micro Irrigation. Under the funding arrangement, NABARD lends to the States/UTs at 3% lower interest rate than the corresponding cost of fund mobilized by NABARD from the market. The interest subvention on the loan under MIF is borne by Centre under PDMC. Projects with loans under MIF worth Rs 4710.96 crore have been approved so far. Loans amounting Rs.2812.24 crore has been disbursed to States of Andhra Pradesh, Tamil Nadu, Gujarat, Punjab, Haryana and Rajasthan. The Ministry provides interest subvention on the loan availed by the States which is met from PDMC Scheme. As per the Budget 2021-22, the corpus of the fund is to be doubled to Rs.10000 crores. MIF is now merged with PDMC."
+
+  utter_smam_scheme_brief:
+  - text: "Paramparagat Krishi Vikas Yojana (PKVY) aims to increase soil fertility and thereby helps in production of healthy food through organic practices without the use of agro-chemicals. The scheme is implemented in a cluster mode with unit cluster size of 20 hectares. A group shall comprise minimum 20 farmers (may be more if individual holdings are less). Farmers in a group can avail benefit of maximum of 2 ha as per provision of PKVY. 25 such clusters are converted into one large cluster of about 500 ha area to facilitate marketing of organic produce. The scheme provides for an assistance of Rs. 31,500 per ha to states, out of which i.e., Rs. 15,000 is given as incentives to a farmer directly through DBT."
+
+  utter_crm_scheme_brief:
+  - text: "Sub Mission on Agricultural Mechanization (SMAM) is being implemented w.e.f April, 2014 which aims at catalyzing an accelerated but inclusive growth of agricultural mechanization in India with the objectives of Increasing the reach of farm mechanization to small and marginal farmers and to the regions where availability of farm power is low, promoting ‘Custom Hiring Centres’ to offset the adverse economies of scale arising due to small landholding and high cost of individual ownership, creating hubs for hi-tech& high value farm equipments, creating awareness among stakeholders through demonstration and capacity building activities and Ensuring performance testing and certification at designated testing centers located all over the country. Till date Rs. 6748.78 Crore have been released to State Governments, distributed more than 15,75,719 agricultural machinery & equipment’s including Tractors, Power Tillers, Self-Propelled Machineries and Plant Protection Equipment and established 23472 nos of Custom Hiring Centres, 504 nos of Hi-Tech Hubs and 20597 nos. of Farm Machinery Banks. Promotion of Drone Technology under SMAM Looking into the unique advantages of Drone technologies in agriculture, a Standard Crop Specific Operating Procedures (SOPs) released the for use of drones in pesticide and nutrient application in public domain on 20.04.2023, which provides concise instructions for effective and safe operations of drones. From within the funds of SMAM, so far an amount of Rs. 138.82 crores have been released towards Kisan drone promotion, which include purchase of 317 Drones for their demonstration in 79070 hectares of land and supply of 461 drones to the farmers on subsidy and also supply of 1595 drones to the CHCs for providing drone services to the farmers on rental basis."
+
+  utter_agro_forestry_scheme_brief:
+  - text: "Crop Residue Management was implemented from 2018-19 in Punjab, Haryana, Uttar Pradesh and NCT of Delhi. Its objectives include protecting environment from air pollution and preventing loss of nutrients and soil micro-organisms caused by burning of crop residue through promoting in-situ management of crop residue. In this regard, it proposes to set up Farm Machinery Banks for custom hiring of in-situ crop residue management machinery. It also aims to creating awareness among stakeholders through demonstration, capacity building activities and differentiated information, education and communication strategies for effective utilization and management of crop residue. Rs. 3333.17 crore has been released under the scheme since inception and distributed more than 2,95,845 CRM machinery. CRM is now merged with SMAM."
+
+  utter_nfsm_scheme_brief:
+  - text: "The Mission aims at increasing production of rice, wheat, pulses, coarse cereals (Maize and Barley) and Nutri-Cereals through area expansion and productivity enhancement in a sustainable manner in the identified districts of 28 States and 2 UTs (i.e., J&K and Ladakh). Other objectives include restoring Soil fertility and productivity at the individual farm level, enhancing farm level economy to restore confidence amongst the farmers and post harvest value addition at farm gate. Since the declaration of the International Year of Millets (IYM) 2023 by the UNGA in 2021, Government has taken a proactive multi stakeholder engagement approach to achieve the aim of IYM 2023 and taking Indian millets globally. 25 seed-hubs have been established to ensure availability of quality seed of latest improved varieties of Nutri cereals in the country. Millet missions have been launched across 13 states including Odisha, Tamil Nadu, Chhattisgarh, Assam, Karnataka, Madhya Pradesh, Maharashtra, Uttarakhand, Uttar Pradesh, Bihar, Himachal Pradesh, Gujarat and Rajasthan. More than 500 start-ups and 350 FPOs have been"
+
+  utter_smsp_scheme_brief:
+  - text: "SMSP covers the entire gamut of seed production chain, from production of nucleus seed to supply of certified seeds to the farmers, to provide support for creation of infrastructure conducive for development of the seed sector, support to the public seed producing organisations for improving their capacity and quality of seed production, create dedicated seed bank to meet unforeseen circumstances of natural calamities, etc. For effective monitoring, efficiency and transparency covering Seed chain from Nucleus- Breeder-Foundation-Certified Seed, first phase of Seed Authentication, Traceability & Holistic Inventory (SATHI) portal was launched on 19th April, 2023. SMSP is now merged with NFSM."
+
+  utter_nmeo_oil_palm_scheme_brief:
+  - text: "NMEO-Oil Palm promotes oil palm cultivation to make the country self-sufficient in edible oils, with a special focus on North-Eastern States and A&N Islands. It aims to bring additional areas under oil palm plantation."
+
+  utter_midh_scheme_brief:
+  - text: "Mission for Integrated Development of Horticulture (MIDH), a Centrally Sponsored Scheme was launched during 2014-15 for holistic growth of the horticulture sector covering fruits, vegetables, root and tuber crops, mushrooms, spices, flowers, aromatic plants, coconut, cashew, cocoa and Bamboo. Major components include plantation infrastructure development, establishment of new orchards and gardens for fruits, vegetables, spices and flowers, rejuvenation of unproductive, old, and senile orchards, protected cultivation, promotion of organic farming, pollination support through bee keeping, horticulture mechanization, post-harvest management (phm) and marketing infrastructure etc Under MIDH since 2014-15 to 2023-24 (as on 31.10.2023) an additional area of 12.95 lakh ha. of identified horticulture crops has been covered, 872 nurseries established for production of quality planting material, 1.41 lakh ha. of old and senile orchards has been rejuvenated, 52069 ha. been covered under organic practices and 3.07 lakh ha. has been covered under Protected Cultivation."
+
+  utter_nbm_scheme_brief:
+  - text: "The Scheme is implemented in 23 States and 1 UT (J&K) through the State Bamboo Missions (SBM)/ State Bamboo Development Agency (SBDA).NBM mainly focus on the development of complete value chain of the bamboo sector. It is envisaged to link growers with consumers with a cluster approach mode.  Under NBM, 367 Bamboo Nurseries established, 212 bamboo Nurseries Accredited by the State Level Accreditation Committees, 46000 ha bamboo plantations established in non-forest Government & private lands, 81 units for bamboo primary processing established, 416 units established for value addition and product development, and capacity building for 15000 persons including farmers, artisans and entrepreneurs. NBM is now merged with MIDH."
+
+  utter_isam_scheme_brief:
+  - text: "ISAM supports state governments in governing the agricultural produce marketing through creation and improvement of market structures, capacity building and generating access to market information. During 2017-18, National Agriculture Market Scheme popularly known as e-NAM scheme has also been made part of the same. National Agriculture Market (e-NAM) is a pan-India electronic trading portal which networks the existing APMC mandis to create a unified national market for agricultural commodities. 1389 mandis of 23 States and 04 UTs have been integrated to e- NAM platform and more than 1.76 Crore Farmers & 2.5 Lakh traders have been registered on e-NAM portal."
+
+  utter_movcdner_scheme_brief:
+  - text: "The MOVCDNER aims at development of commodity specific, concentrated, certified organic production clusters in value chain mode to link growers with consumers and to support the development of entire value chain starting from inputs, seeds, certification, to the creation of facilities for collection, aggregation, processing, marketing and brand building initiative in Northeast Region (Arunachal Pradesh, Assam, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim, and Tripura). Since 2015-16 (as on 06.12.2023), Rs 1035.17 crore has been released, 379 FPO/FPCs created covering 189039 farmers and 172966 ha area."
+
+  utter_smae_scheme_brief:
+  - text: "The scheme aims at making the extension system farmer driven and farmer accountable by disseminating technology to farmers through new institutional arrangements viz. Agricultural Technology Management Agency (ATMA) at district level to operationalize extension reforms in a participatory mode. Digital initiatives taken up in agricultural extension include; VISTAAR - Virtually integrated Systems To Access Agricultural Resourcs being developed as a DPI for Agriculture Extension Apurva AI- Capturing farmer innovations- Acts as a peer to peer learning Platform and provide content for advisory retrieval through VISTAAR Bot and also for impact Assessment of schemes (AIF completed) Wadhwani- Krishi 24X7 for Realtime News monitoring, Tamil language and image-based cotton pest identification to be plugged in with FLEW/farmer profile mapping Kisan Call Centre - Integration with VISTAAR and other IT applications and with Kisan Sarathi (ICAR) for direct contact with Agri experts RAWE- Integration of Agri students for behavioral interaction through VISTAAR Bot and Feedback systemIMD- Weather forecast integrated through DAMU along with advisory delivery through VISTAAR NRLM- Decentralised Extension Mechanism ( Krishi Sakhi, Pashu Sakhi , Matsya Sakhi etc) - Capacity building on Digital Extension -VISTAAR"
+
+  utter_digital_agriculture_scheme_brief:
+  - text: "The scheme aims to improve the existing National e- Governance Plan in Agriculture (NeGPA) by developing a digital public infrastructure for agriculture that will be built as an open source, open standard and interoperable public good to enable inclusive, farmer-centric solutions through relevant information services for crop planning and health, improved access to farm inputs, credit and insurance, help for crop estimation, market intelligence, and support for the growth of Agri Techs industry and start-ups. AgriStack architecture has the following foundational layers: -Core registriesBase databasesFarmers Database: Farmers ID linked with land recordsGeo-referencing of plotsCrop Survey, Crop planning andSoil Mapping, Soil FertilityUnified Farmers Service Interface for state, Pvt. PlayersData Exchange"
+
+  utter_seed_subsidy_brief:
+  - text: "Seed Subsidy involves the government providing high-yielding seeds at reasonable prices to farmers, along with future payment alternatives. Additionally, the government conducts research and development activities to generate such prolific seeds, with the cost of these activities serving as a form of subsidy provided to farmers."
+
+  utter_fertilizer_subsidy_brief:
+  - text: "Fertilizer Subsidy refers to the distribution of low-cost chemical or non-chemical fertilizers to farmers. It covers the difference between the price paid to fertilizer manufacturers and the price received from farmers. This subsidy ensures cheap inputs to farmers, stability in fertilizer prices, reasonable returns to manufacturers, and the availability of fertilizers in adequate quantity."
+
+  utter_irrigation_subsidy_brief:
+  - text: "Irrigation Subsidy involves the government providing irrigation services at a lower cost than the market rate. It covers the difference between the state's operation and maintenance costs for irrigation infrastructure and the irrigation fees paid by farmers. This subsidy can be achieved through the construction of public goods such as canals, dams, tube wells, or the use of low-cost private irrigation equipment."
+
+  utter_power_subsidy_brief:
+  - text: "Power Subsidy indicates that the government charges farmers a cheap rate for the electricity they receive, primarily used for irrigation purposes. It covers the difference between the cost of producing and distributing energy to farmers and the price paid by them. This subsidy incentivizes farmers to invest in pumping sets, bore-wells, tube wells, and other irrigation systems."
+
+  utter_export_subsidy_brief:
+  - text: "Export Subsidy is granted to farmers to help them compete on a global scale. It provides financial incentives when farmers or exporters sell agricultural products in foreign markets, generating income for themselves and earning foreign exchange for the government. Agricultural exports are promoted as long as they do not have a negative impact on the home economy."
+
+  utter_credit_subsidy_brief:
+  - text: "Credit Subsidy is the gap between the interest charged to farmers and the actual cost of providing credit, including expenses like bad loan write-offs. It addresses the issue of credit availability for disadvantaged farmers who lack funds and collateral to access the credit market. This subsidy aims to make credit more affordable and accessible to farmers."
+
+  utter_agriculture_equipment_subsidy_brief:
+  - text: "Agriculture Equipment Subsidy involves subsidies provided to farmers through various government schemes for the purchase of agricultural equipment and machines. These schemes include the Sub-Mission on Agricultural Mechanization (SMAM), Rashtriya Krishi Vikas Yojana (RKVY), National Food Security Mission (NFSM), Mission for Integrated Development of Horticulture (MIDH), and National Mission on Oilseeds and Oil Palm (NMOOP)."
+
+  utter_agriculture_infrastructure_subsidy_brief:
+  - text: "Agriculture Infrastructure Subsidy addresses the insufficiency of private efforts to boost agricultural production. It includes subsidies for essential facilities such as good roads, storage facilities, power, market intelligence, and transportation to ports. These facilities, categorized as public goods, are provided by the government to ensure their availability to all cultivators in a given area."
+
+  utter_subsidies_available_brief:
+  - text: "The subsidies available to farmers include Seed Subsidy, Fertilizer Subsidy, Irrigation Subsidy, Power Subsidy, Export Subsidy, Credit Subsidy, Agriculture Equipment Subsidy, and Agriculture Infrastructure Subsidy."
+
+  utter_schemes_available_brief:
+  - text: "The agricultural schemes include Pradhan Mantri Kisan Samman Nidhi (PM-KISAN), Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY), Pradhan Mantri Fasal Bima Yojana (PMFBY), Modified Interest Subvention Scheme (MISS), Agriculture Infrastructure Fund (AIF), Formation & Promotion of new 10,000 FPOs, National Beekeeping and Honey Mission (NBHM), Market Intervention Scheme and Price support Scheme (MIS-PSS), Namo Drone Didi, Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY- DPR), Soil Health Card (SHC), Rainfed Area Development (RAD), Per Drop More Crop (PDMC), Micro Irrigation Fund (MIF), Paramparagat Krishi Vikas Yojana (PKVY), Sub-Mission on Agriculture Mechanization (SMAM), Crop Residue Management, Agro-forestry, National Food Security Mission (NFSM), Sub-Mission on Seed and Planting Material (SMSP), National Mission on Edible Oils (NMEO)-Oil Palm, Mission for Integrated Development of Horticulture (MIDH), National Bamboo Mission (NBM), Integrated Scheme for Agriculture Marketing (ISAM), Mission Organic Value Chain Development for North Eastern Region, Sub-Mission on Agriculture Extension (SMAE), and Digital Agriculture."
+
+  utter_pkvy_scheme_brief:
+  - text: "Paramparagat Krishi Vikas Yojana (PKVY) aims to increase soil fertility and thereby helps in production of healthy food through organic practices without the use of agro-chemicals. The scheme is implemented in a cluster mode with unit cluster size of 20 hectares. A group shall comprise minimum 20 farmers (may be more if individual holdings are less). Farmers in a group can avail benefit of maximum of 2 ha as per provision of PKVY. 25 such clusters are converted into one large cluster of about 500 ha area to facilitate marketing of organic produce. The scheme provides for an assistance of Rs. 31,500 per ha to states, out of which i.e., Rs. 15,000 is given as incentives to a farmer directly through DBT."
+
+  utter_ask_product:
+  - text: "Which product's price would you like to know?"
+
+  utter_steps_to_apply_PM_Kisan:
+  - text: "To apply for the PM-Kisan scheme, eligible farmers can visit the official PM-Kisan website and navigate to the 'New Farmer Registration' section. Fill out the application form with accurate details such as name, Aadhaar number, bank account information, and landholding details. Required documents like Aadhaar card, land ownership documents, and bank account details should be uploaded. After submission, the application undergoes verification, and upon approval, beneficiaries start receiving benefits directly into their bank accounts."
+
+  utter_documents_needed_PM_Kisan:
+  - text: "To apply for PM-Kisan, you need documents such as Aadhaar card, land ownership documents, and bank account details."
+
+  utter_steps_to_apply_PM_KMY:
+  - text: "To apply for the Pradhan Mantri Kisan Maan-Dhan Yojana (PM-KMY), farmers between the ages of 18 to 40 years can approach their nearest Common Service Centre (CSC) or Agriculture Department office. Fill out the PM-KMY application form with accurate personal and farming details, along with providing necessary identification documents such as Aadhaar card, bank account details, and landholding documents. After submitting the application, it undergoes verification, and upon approval, the farmer becomes a member of the PM-KMY scheme. Once enrolled, they start contributing to the scheme through monthly premium payments via auto-debit from their bank account. The scheme offers a pension benefit to eligible farmers upon reaching the age of 60, aiding in their financial security during old age."
+
+  utter_documents_needed_PM_KMY:
+  - text: "To apply for PM-KMY, you need documents such as Aadhaar card, bank account details, and landholding documents."
+
+  utter_steps_to_apply_PMFBY:
+  - text: "To apply for the Pradhan Mantri Fasal Bima Yojana (PMFBY), farmers can approach their nearest Agricultural Insurance Company (AIC) office or a registered insurance agent. Fill out the PMFBY application form with accurate details about your crops, landholding, and personal information. Required documents such as Aadhaar card, land ownership documents, and bank account details should be provided. After submission, the application undergoes verification, and upon approval, the farmer becomes enrolled in the PMFBY scheme for the respective cropping season. Premium payment is typically subsidized, with farmers required to pay a nominal portion of the premium amount. The scheme provides insurance coverage against various crop-related risks, offering financial support to farmers in case of crop loss due to natural calamities or other covered perils."
+
+  utter_documents_needed_PMFBY:
+  - text: "To apply for PMFBY, you need documents such as Aadhaar card, land ownership documents, and bank account details."
+
+  utter_steps_to_apply_MISS:
+  - text: "To apply for the Modified Interest Subvention Scheme (MISS), small and marginal farmers can approach their nearest bank branch that participates in the scheme. Inquire about the MISS application process and eligibility criteria at the bank. Typically, farmers are required to fill out an application form provided by the bank, which includes details such as their personal information, loan amount, purpose of the loan, and landholding details. Along with the application form, farmers must submit necessary documents such as Aadhaar card, land ownership documents, and other relevant papers as specified by the bank. Once the application is submitted, the bank verifies the details and processes the loan application under the MISS scheme. If approved, the farmer benefits from reduced interest rates on agricultural loans, thereby easing the financial burden."
+
+  utter_documents_needed_MISS:
+  - text: "To apply for MISS, you need documents such as Aadhaar card, land ownership documents, and other relevant papers as specified by the bank."
+
+  utter_steps_to_apply_AIF:
+  - text: "To apply for the Agriculture Infrastructure Fund (AIF), interested individuals or entities such as farmer producer organizations (FPOs), cooperatives, entrepreneurs, startups, and agri-businesses can approach participating banks, financial institutions, or NBFCs (Non-Banking Financial Companies). They should inquire about the application process and eligibility criteria set forth by the AIF guidelines. Typically, applicants need to submit a detailed project proposal outlining the infrastructure development plan, including information on the type of infrastructure to be developed, estimated costs, expected benefits, and repayment plans. Along with the project proposal, necessary documents such as Aadhaar card, business registration documents, land ownership documents (if applicable), and financial statements may be required. Upon submission, the application undergoes evaluation by the lending institution, and if approved, the applicant receives funding under the AIF to implement the proposed infrastructure project, thereby contributing to the enhancement of agricultural infrastructure in the country."
+
+  utter_documents_needed_AIF:
+  - text: "To apply for AIF, you need documents such as Aadhaar card, business registration documents, land ownership documents (if applicable), and financial statements."
+
+  utter_steps_to_apply_FPOs_scheme:
+  - text: "To apply for the Formation & Promotion of new 10,000 Farmer Producer Organizations (FPOs) scheme, interested groups or individuals such as farmers, agricultural entrepreneurs, cooperatives, NGOs, or self-help groups should contact the designated implementing agency or department responsible for the scheme's administration, which could be a government department or a designated agency. Inquire about the application process and eligibility criteria outlined in the scheme guidelines. Typically, applicants are required to submit a detailed proposal outlining their plan to form and promote a new FPO, including information on the group's composition, objectives, operational plan, and potential impact on local agriculture. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, land records (if applicable), and organizational documents."
+
+  utter_documents_needed_FPOs_scheme:
+  - text: "To apply for the FPOs scheme, you need documents such as identity proofs, land records (if applicable), and organizational documents."
+
+  utter_steps_to_apply_NBHM_scheme:
+  - text: "To apply for the National Beekeeping and Honey Mission (NBHM) scheme, interested individuals, beekeepers, farmer producer organizations (FPOs), cooperatives, or entrepreneurs involved in beekeeping activities should contact the designated implementing agency, which could be a government department or a related organization. Inquire about the application process and eligibility criteria outlined in the NBHM guidelines. Typically, applicants are required to submit a detailed proposal outlining their beekeeping project, including information on the apiary setup, bee species to be used, production targets, marketing strategy, and expected outcomes. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, land records (if applicable), and business registration documents."
+
+  utter_documents_needed_NBHM_scheme:
+  - text: "To apply for NBHM scheme, you need documents such as identity proofs, land records (if applicable), and business registration documents."
+
+  utter_steps_to_apply_MIS_PSS:
+  - text: "To apply for the Market Intervention Scheme and Price Support Scheme (MIS-PSS), interested stakeholders such as farmers, farmer producer organizations (FPOs), cooperatives, or agricultural associations should reach out to the concerned government department or agency responsible for implementing the scheme, typically the Ministry of Agriculture or State Agricultural Marketing Board. They should inquire about the application process and eligibility criteria outlined in the MIS-PSS guidelines. Applicants are usually required to submit a detailed proposal outlining the commodities for which price support is sought, the quantity to be procured, proposed procurement centers, and other relevant details. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, land records (if applicable), and organizational documents."
+
+  utter_documents_needed_MIS_PSS:
+  - text: "To apply for MIS-PSS, you need documents such as identity proofs, land records (if applicable), and organizational documents."
+  utter_apply_Namo_Didi_Scheme:
+  - text: "To apply for the Namo Drone Didi scheme in India, interested women entrepreneurs or individuals should visit the official website of the scheme or contact the designated implementing agency responsible for the program, typically the Ministry of Civil Aviation or a related government department. They need to inquire about the application process and eligibility criteria outlined in the scheme guidelines. Applicants are usually required to submit a detailed proposal outlining their plans to operate drones for various applications such as agriculture, surveillance, or logistics, emphasizing the benefits to be provided to the community or target beneficiaries. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, business registration documents, and relevant certifications."
+  utter_documents_Namo_Didi_Scheme:
+  - text: "Applicants may need to provide supporting documents such as identity proofs, business registration documents, and relevant certifications."
+  utter_steps_Namo_Didi_Scheme:
+  - text: "Interested individuals should visit the official website of the scheme or contact the designated implementing agency responsible for the program. They need to inquire about the application process and eligibility criteria outlined in the scheme guidelines. Applicants are usually required to submit a detailed proposal outlining their plans and provide supporting documents such as identity proofs, business registration documents, and relevant certifications."
+
+  # Responses for RKVY-DPR scheme
+  utter_apply_RKVY_DPR:
+  - text: "To apply for the Detailed Project based schemes under the Rashtriya Krishi Vikas Yojana (RKVY-DPR) in India, interested stakeholders such as state governments, agricultural departments, farmer producer organizations (FPOs), cooperatives, or agri-entrepreneurs should approach the concerned State Agricultural Department or the designated implementing agency responsible for RKVY-DPR. They need to inquire about the application process and eligibility criteria outlined in the RKVY-DPR guidelines specific to their state. Typically, applicants are required to submit a detailed project proposal focusing on agricultural development, innovation, or infrastructure enhancement, with clear objectives, activities, budget allocation, and expected outcomes. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, land records, partnership agreements (if applicable), and other relevant certifications."
+  utter_documents_RKVY_DPR:
+  - text: "Applicants may need to provide supporting documents such as identity proofs, land records, partnership agreements (if applicable), and other relevant certifications."
+  utter_steps_RKVY_DPR:
+  - text: "Interested stakeholders should approach the concerned State Agricultural Department or the designated implementing agency. They need to inquire about the application process and eligibility criteria outlined in the RKVY-DPR guidelines specific to their state. Typically, applicants are required to submit a detailed project proposal focusing on agricultural development, innovation, or infrastructure enhancement, with clear objectives, activities, budget allocation, and expected outcomes."
+
+  # Responses for SHC scheme
+  utter_apply_SHC_scheme:
+  - text: "To apply for the Soil Health Card (SHC) scheme in India, farmers can approach their nearest Agricultural Department office or Common Service Centre (CSC). They should inquire about the application process and eligibility criteria for obtaining soil health cards. Typically, farmers need to provide details such as their name, address, and landholding information. After registration, soil samples are collected from the farmer's field by authorized personnel. These samples are then sent to accredited soil testing laboratories for analysis. Once the analysis is completed, the soil health card is generated, providing information about the soil's nutrient levels, pH levels, and recommendations for soil management practices. The soil health card is then handed over to the farmer, along with guidance on how to interpret and use the information provided to optimize soil health and crop productivity."
+  utter_documents_SHC_scheme:
+  - text: "Farmers need to provide details such as their name, address, and landholding information."
+  utter_steps_SHC_scheme:
+  - text: "Farmers should approach their nearest Agricultural Department office or Common Service Centre (CSC). They need to inquire about the application process and eligibility criteria for obtaining soil health cards. After registration, soil samples are collected from the farmer's field by authorized personnel, sent to accredited soil testing laboratories for analysis, and once completed, the soil health card is generated and handed over to the farmer."
+
+  # Responses for RAD scheme
+  utter_apply_RAD_scheme:
+  - text: "To apply for the Rainfed Area Development (RAD) scheme in India, interested individuals, farmer groups, or organizations should reach out to the concerned State Agricultural Department or the designated implementing agency responsible for RAD. They need to inquire about the application process and eligibility criteria outlined in the RAD scheme guidelines specific to their state. Typically, applicants are required to submit a detailed proposal focusing on development interventions aimed at enhancing agricultural productivity and livelihoods in rainfed areas, with clear objectives, activities, budget allocation, and expected outcomes. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, land records, partnership agreements (if applicable), and other relevant certifications."
+  utter_documents_RAD_scheme:
+  - text: "Applicants may need to provide supporting documents such as identity proofs, land records, partnership agreements (if applicable), and other relevant certifications."
+  utter_steps_RAD_scheme:
+  - text: "Interested individuals, farmer groups, or organizations should reach out to the concerned State Agricultural Department or the designated implementing agency. They need to inquire about the application process and eligibility criteria outlined in the RAD scheme guidelines specific to their state. Typically, applicants are required to submit a detailed proposal focusing on development interventions aimed at enhancing agricultural productivity and livelihoods in rainfed areas, with clear objectives, activities, budget allocation, and expected outcomes."
+
+  # Responses for PDMC scheme
+  utter_apply_PDMC_scheme:
+  - text: "To apply for the Per Drop More Crop (Micro Irrigation) scheme in India, interested farmers or individuals can approach the nearest office of the Department of Agriculture, Horticulture, or Water Resources in their respective state. They should inquire about the application process and eligibility criteria for availing benefits under the scheme. Typically, farmers need to submit an application form along with necessary documents such as land ownership papers, identity proof, and Aadhaar card. After verification of the application, eligible farmers are provided with subsidies or financial assistance to install micro-irrigation systems such as drip irrigation or sprinkler irrigation on their farms."
+  utter_documents_PDMC_scheme:
+  - text: "Farmers need to submit an application form along with necessary documents such as land ownership papers, identity proof, and Aadhaar card."
+  utter_steps_PDMC_scheme:
+  - text: "Interested farmers or individuals should approach the nearest office of the Department of Agriculture, Horticulture, or Water Resources in their respective state. They need to inquire about the application process and eligibility criteria for availing benefits under the scheme. After verification of the application, eligible farmers are provided with subsidies or financial assistance to install micro-irrigation systems such as drip irrigation or sprinkler irrigation on their farms."
+
+  # Responses for MIF scheme
+  utter_apply_MIF_scheme:
+  - text: "To apply for the Micro Irrigation Fund (MIF) scheme in India, interested individuals or entities such as farmers, farmer producer organizations (FPOs), cooperatives, or agricultural entrepreneurs should approach the designated implementing agency, typically the National Bank for Agriculture and Rural Development (NABARD) or a related financial institution. They need to inquire about the application process and eligibility criteria outlined in the MIF scheme guidelines. Applicants are usually required to submit a detailed project proposal outlining their plans to implement micro-irrigation systems such as drip irrigation or sprinkler irrigation, including information on the area to be covered, crops to be cultivated, estimated costs, and expected outcomes."
+  utter_documents_MIF_scheme:
+  - text: "Applicants may need to provide supporting documents such as identity proofs, land records (if applicable), business registration documents, and financial statements."
+  utter_steps_MIF_scheme:
+  - text: "Interested individuals or entities should approach the designated implementing agency, typically the National Bank for Agriculture and Rural Development (NABARD) or a related financial institution. They need to inquire about the application process and eligibility criteria outlined in the MIF scheme guidelines. Applicants are usually required to submit a detailed project proposal outlining their plans to implement micro-irrigation systems such as drip irrigation or sprinkler irrigation, including information on the area to be covered, crops to be cultivated, estimated costs, and expected outcomes."
+
+  # Responses for PKVY scheme
+  utter_apply_PKVY_scheme:
+  - text: "To apply for the Paramparagat Krishi Vikas Yojana (PKVY) scheme in India, interested farmers or groups should approach the nearest office of the State Agricultural Department or the designated implementing agency responsible for PKVY in their state. They need to inquire about the application process and eligibility criteria outlined in the PKVY guidelines. Typically, farmers practicing organic farming methods or interested in transitioning to organic farming can apply for the scheme. Applicants are usually required to submit an application form along with necessary documents such as identity proofs, land ownership papers, and a detailed proposal outlining their organic farming practices."
+  utter_documents_PKVY_scheme:
+  - text: "Applicants may need to provide supporting documents such as identity proofs, land ownership papers, and a detailed proposal outlining their organic farming practices."
+  utter_steps_PKVY_scheme:
+  - text: "Interested farmers or groups should approach the nearest office of the State Agricultural Department or the designated implementing agency responsible for PKVY in their state. They need to inquire about the application process and eligibility criteria outlined in the PKVY guidelines. Typically, farmers practicing organic farming methods or interested in transitioning to organic farming can apply for the scheme."
+
+  # Responses for SMAM scheme
+  utter_apply_SMAM_scheme:
+  - text: "To apply for the Sub-Mission on Agriculture Mechanization (SMAM) scheme in India, interested farmers or agricultural entrepreneurs should approach the nearest office of the Department of Agriculture, Agricultural Engineering, or the designated implementing agency responsible for SMAM in their state. They need to inquire about the application process and eligibility criteria outlined in the SMAM guidelines specific to their state. Typically, applicants are required to submit a detailed proposal outlining their plans to procure agricultural machinery, equipment, or implements to enhance mechanization in farming operations. The proposal should include information on the type of machinery to be procured, estimated costs, area coverage, and expected outcomes."
+  utter_documents_SMAM_scheme:
+  - text: "Applicants may need to provide supporting documents such as identity proofs, land records (if applicable), and business registration documents."
+  utter_steps_SMAM_scheme:
+  - text: "Interested farmers or agricultural entrepreneurs should approach the nearest office of the Department of Agriculture, Agricultural Engineering, or the designated implementing agency. They need to inquire about the application process and eligibility criteria outlined in the SMAM guidelines specific to their state. Typically, applicants are required to submit a detailed proposal outlining their plans to procure agricultural machinery, equipment, or implements to enhance mechanization in farming operations."
+
+  # Responses for CRM scheme
+  utter_apply_CRM_scheme:
+  - text: "To apply for the Crop Residue Management (CRM) scheme in India, interested farmers or agricultural organizations should approach the nearest office of the Department of Agriculture or the designated implementing agency responsible for CRM in their state. They need to inquire about the application process and eligibility criteria outlined in the CRM guidelines specific to their region. Typically, applicants are required to submit a detailed proposal outlining their plans to adopt crop residue management practices such as stubble management, crop residue utilization, or residue recycling techniques. The proposal should include information on the area to be covered, types of crop residues, proposed management techniques, estimated costs, and expected outcomes."
+  utter_documents_CRM_scheme:
+  - text: "Applicants may need to provide supporting documents such as identity proofs, land records (if applicable), and business registration documents."
+  utter_steps_CRM_scheme:
+  - text: "Interested farmers or agricultural organizations should approach the nearest office of the Department of Agriculture or the designated implementing agency. They need to inquire about the application process and eligibility criteria outlined in the CRM guidelines specific to their region. Typically, applicants are required to submit a detailed proposal outlining their plans to adopt crop residue management practices such as stubble management, crop residue utilization, or residue recycling techniques."
+
+  # Responses for Agro-forestry scheme
+  utter_apply_Agro_forestry_scheme:
+  - text: "To apply for the Agro-forestry scheme in India, interested individuals or entities such as farmers, farmer producer organizations (FPOs), cooperatives, or agricultural entrepreneurs should approach the nearest office of the Department of Agriculture, Horticulture, or Forestry, or the designated implementing agency responsible for agro-forestry schemes in their region. They need to inquire about the application process and eligibility criteria outlined in the agro-forestry scheme guidelines specific to their state or district. Typically, applicants are required to submit a detailed proposal outlining their plans to establish agro-forestry systems, including information on the types of trees or crops to be planted, land area to be utilized, proposed management practices, estimated costs, and expected outcomes."
+  utter_documents_Agro_forestry_scheme:
+  - text: "Applicants may need to provide supporting documents such as identity proofs, land records, and business registration documents."
+  utter_steps_Agro_forestry_scheme:
+  - text: "Interested individuals or entities should approach the nearest office of the Department of Agriculture, Horticulture, or Forestry, or the designated implementing agency. They need to inquire about the application process and eligibility criteria outlined in the agro-forestry scheme guidelines specific to their state or district. Typically, applicants are required to submit a detailed proposal outlining their plans to establish agro-forestry systems, including information on the types of trees or crops to be planted, land area to be utilized, proposed management practices, estimated costs, and expected outcomes."
+  utter_apply_NFSM_scheme:
+  - text: "To apply for the National Food Security Mission (NFSM) scheme in India, interested farmers or agricultural organizations should approach the nearest office of the Department of Agriculture, or the designated implementing agency responsible for NFSM in their state or district. They need to inquire about the application process and eligibility criteria outlined in the NFSM guidelines specific to their region. Typically, applicants are not required to directly apply for NFSM benefits as the scheme operates through government agencies and departments at the state and district levels. However, farmers can participate in NFSM-supported activities such as demonstrations, trainings, distribution of seeds, fertilizers, and other inputs through various programs conducted by agricultural extension officers, Krishi Vigyan Kendras (KVKs), or other related institutions. To avail benefits under NFSM, farmers should actively engage with these agencies and participate in the programs and initiatives organized under the scheme. Additionally, farmers can stay informed about NFSM activities and announcements through official channels such as government websites, agricultural extension offices, and local administrative authorities."
+  
+  utter_documents_NFSM_scheme:
+  - text: "The documents needed to apply for the National Food Security Mission (NFSM) scheme may vary depending on the specific programs and initiatives under NFSM. Interested individuals or organizations should inquire about the required documents at the nearest office of the Department of Agriculture or the designated implementing agency responsible for NFSM in their region."
+
+  utter_steps_NFSM_scheme:
+  - text: "The steps to apply for the National Food Security Mission (NFSM) scheme may vary depending on the specific programs and initiatives under NFSM. Interested individuals or organizations should inquire about the application process at the nearest office of the Department of Agriculture or the designated implementing agency responsible for NFSM in their region."
+
+  utter_apply_SMSP_scheme:
+  - text: "To apply for the Sub-Mission on Seed and Planting Material (SMSP) scheme in India, interested individuals or entities such as farmers, farmer producer organizations (FPOs), cooperatives, or agricultural entrepreneurs should approach the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for SMSP in their state or district. They need to inquire about the application process and eligibility criteria outlined in the SMSP guidelines specific to their region. Typically, applicants are required to submit a detailed proposal outlining their plans to procure quality seeds and planting material, including information on the types of crops or varieties to be procured, estimated quantities, proposed distribution channels, and expected outcomes. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, land records (if applicable), business registration documents, and financial statements."
+
+  utter_documents_SMSP_scheme:
+  - text: "The documents needed to apply for the Sub-Mission on Seed and Planting Material (SMSP) scheme may vary depending on the specific guidelines and requirements of the scheme. Interested individuals or entities should inquire about the required documents at the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for SMSP in their region."
+
+  utter_steps_SMSP_scheme:
+  - text: "The steps to apply for the Sub-Mission on Seed and Planting Material (SMSP) scheme may vary depending on the specific guidelines and procedures outlined for the scheme. Interested individuals or entities should inquire about the application process at the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for SMSP in their region."
+
+  utter_apply_NMEO_Oil_Palm_scheme:
+  - text: "To apply for the National Mission on Edible Oils (NMEO) - Oil Palm scheme in India, interested individuals or entities such as farmers, farmer producer organizations (FPOs), cooperatives, or agricultural entrepreneurs should approach the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for NMEO-Oil Palm in their state or district. They need to inquire about the application process and eligibility criteria outlined in the NMEO-Oil Palm scheme guidelines specific to their region. Typically, applicants are required to submit a detailed proposal outlining their plans to establish oil palm plantations, including information on the land area to be utilized, proposed varieties to be planted, projected costs, and expected outcomes. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, land records (if applicable), business registration documents, and financial statements."
+
+  utter_documents_NMEO_Oil_Palm_scheme:
+  - text: "The documents needed to apply for the National Mission on Edible Oils (NMEO) - Oil Palm scheme may vary depending on the specific guidelines and requirements of the scheme. Interested individuals or entities should inquire about the required documents at the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for NMEO-Oil Palm in their region."
+
+  utter_steps_NMEO_Oil_Palm_scheme:
+  - text: "The steps to apply for the National Mission on Edible Oils (NMEO) - Oil Palm scheme may vary depending on the specific guidelines and procedures outlined for the scheme. Interested individuals or entities should inquire about the application process at the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for NMEO-Oil Palm in their region."
+
+  utter_apply_MIDH_scheme:
+  - text: "To apply for the Mission for Integrated Development of Horticulture (MIDH) scheme in India, interested individuals or entities such as farmers, farmer producer organizations (FPOs), cooperatives, or agricultural entrepreneurs should approach the nearest office of the Department of Horticulture or the designated implementing agency responsible for MIDH in their state or district. They need to inquire about the application process and eligibility criteria outlined in the MIDH guidelines specific to their region. Typically, applicants are required to submit a detailed project proposal outlining their plans for horticulture development, including information on the type of horticulture activity (such as fruits, vegetables, flowers, spices, etc.), proposed interventions, estimated costs, and expected outcomes. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, land records (if applicable), business registration documents, and financial statements."
+
+  utter_documents_MIDH_scheme:
+  - text: "The documents needed to apply for the Mission for Integrated Development of Horticulture (MIDH) scheme may vary depending on the specific guidelines and requirements of the scheme. Interested individuals or entities should inquire about the required documents at the nearest office of the Department of Horticulture or the designated implementing agency responsible for MIDH in their region."
+
+  utter_steps_MIDH_scheme:
+  - text: "The steps to apply for the Mission for Integrated Development of Horticulture (MIDH) scheme may vary depending on the specific guidelines and procedures outlined for the scheme. Interested individuals or entities should inquire about the application process at the nearest office of the Department of Horticulture or the designated implementing agency responsible for MIDH in their region."
+
+  utter_apply_NBM_scheme:
+  - text: "To apply for the National Bamboo Mission (NBM) scheme in India, interested individuals or entities such as farmers, farmer producer organizations (FPOs), cooperatives, or entrepreneurs should approach the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for NBM in their state or district. They need to inquire about the application process and eligibility criteria outlined in the NBM guidelines specific to their region. Typically, applicants are required to submit a detailed project proposal outlining their plans for bamboo cultivation, management, and value addition, including information on the land area to be utilized, proposed bamboo species, intended activities (such as planting, harvesting, processing), estimated costs, and expected outcomes. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, land records (if applicable), business registration documents, and financial statements."
+
+  utter_documents_NBM_scheme:
+  - text: "The documents needed to apply for the National Bamboo Mission (NBM) scheme may vary depending on the specific guidelines and requirements of the scheme. Interested individuals or entities should inquire about the required documents at the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for NBM in their region."
+
+  utter_steps_NBM_scheme:
+  - text: "The steps to apply for the National Bamboo Mission (NBM) scheme may vary depending on the specific guidelines and procedures outlined for the scheme. Interested individuals or entities should inquire about the application process at the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for NBM in their region."
+
+  utter_apply_ISAM_scheme:
+  - text: "To apply for the Integrated Scheme for Agriculture Marketing (ISAM) scheme in India, interested individuals or entities such as farmers, agricultural producers, cooperatives, or entrepreneurs should approach the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for ISAM in their state or district. They need to inquire about the application process and eligibility criteria outlined in the ISAM guidelines specific to their region. Typically, applicants are required to submit a detailed project proposal outlining their plans for agricultural marketing infrastructure development, including information on the type of infrastructure to be developed (such as market yards, collection centers, cold storage facilities, etc.), proposed location, estimated costs, and expected outcomes. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, land records (if applicable), business registration documents, and financial statements."
+
+  utter_documents_ISAM_scheme:
+  - text: "The documents needed to apply for the Integrated Scheme for Agriculture Marketing (ISAM) scheme may vary depending on the specific guidelines and requirements of the scheme. Interested individuals or entities should inquire about the required documents at the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for ISAM in their region."
+
+  utter_steps_ISAM_scheme:
+  - text: "The steps to apply for the Integrated Scheme for Agriculture Marketing (ISAM) scheme may vary depending on the specific guidelines and procedures outlined for the scheme. Interested individuals or entities should inquire about the application process at the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for ISAM in their region."
+
+  utter_apply_MOVCD_NER_scheme:
+  - text: "To apply for the Mission Organic Value Chain Development for North Eastern Region (MOVCD-NER) scheme in India, interested individuals or entities such as farmers, farmer producer organizations (FPOs), cooperatives, or agricultural entrepreneurs should approach the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for MOVCD-NER in their state or district. They need to inquire about the application process and eligibility criteria outlined in the MOVCD-NER guidelines specific to their region. Typically, applicants are required to submit a detailed project proposal outlining their plans for organic farming and value chain development, including information on the type of crops to be grown, proposed production practices, intended marketing channels, estimated costs, and expected outcomes. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, land records (if applicable), business registration documents, and financial statements."
+
+  utter_documents_MOVCD_NER_scheme:
+  - text: "The documents needed to apply for the Mission Organic Value Chain Development for North Eastern Region (MOVCD-NER) scheme may vary depending on the specific guidelines and requirements of the scheme. Interested individuals or entities should inquire about the required documents at the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for MOVCD-NER in their region."
+
+  utter_steps_MOVCD_NER_scheme:
+  - text: "The steps to apply for the Mission Organic Value Chain Development for North Eastern Region (MOVCD-NER) scheme may vary depending on the specific guidelines and procedures outlined for the scheme. Interested individuals or entities should inquire about the application process at the nearest office of the Department of Agriculture, Horticulture, or the designated implementing agency responsible for MOVCD-NER in their region."
+
+  utter_apply_SMAE_scheme:
+  - text: "To apply for the Sub-Mission on Agriculture Extension (SMAE) scheme in India, interested individuals or organizations should approach the nearest office of the Department of Agriculture, Agricultural Extension, or the designated implementing agency responsible for SMAE in their state or district. They need to inquire about the application process and eligibility criteria outlined in the SMAE guidelines specific to their region. Typically, applicants are required to submit a detailed proposal outlining their plans for agricultural extension activities, including information on the target beneficiaries, proposed extension methods, training programs, demonstrations, workshops, or other extension activities planned, estimated costs, and expected outcomes. Along with the proposal, applicants may need to provide supporting documents such as identity proofs, organizational documents (if applicable), and financial statements."
+
+  utter_documents_SMAE_scheme:
+  - text: "The documents needed to apply for the Sub-Mission on Agriculture Extension (SMAE) scheme may vary depending on the specific guidelines and requirements of the scheme. Interested individuals or organizations should inquire about the required documents at the nearest office of the Department of Agriculture, Agricultural Extension, or the designated implementing agency responsible for SMAE in their region."
+
+  utter_steps_SMAE_scheme:
+  - text: "The steps to apply for the Sub-Mission on Agriculture Extension (SMAE) scheme may vary depending on the specific guidelines and procedures outlined for the scheme. Interested individuals or organizations should inquire about the application process at the nearest office of the Department of Agriculture, Agricultural Extension, or the designated implementing agency responsible for SMAE in their region."
+
+  utter_digi_agri:
+  - text: "To empower different sections of rural areas, different ICT strategies have been devised:
+    \n
+    a). Those who have access to digital infrastructure can get the information through websites/web portals.
+    \n
+    b). Those who have smart phones can access the same information through mobile apps.
+    \n
+    c). Those who have basic phones, can get this information through SMS advisories sent by experts.
+    \n
+    d). To get the personalized information; farmers can call at the toll free number of Kisan Call Centre – 18001801551."
+
+  utter_apply_seed_subsidy:
+    - text: "To apply for seed subsidy in India, start by researching the eligibility criteria and requirements specific to your state or region. Contact your local agricultural department to obtain the necessary application forms and guidelines. Gather all required documents, including identification and land ownership proof, and fill out the application form accurately. Submit the completed application along with the supporting documents to the designated authority. Follow up on the application status and provide any additional information if requested. If approved, the subsidy amount will be disbursed directly to your bank account. For more information go to: https://services.india.gov.in/service/detail/subsidy-seed-distribution-application-form."
+
+  utter_documents_needed_seed_subsidy:
+    - text: "To apply for fertilizer subsidy, you'll need the following documents:
+      1. Aadhaar card or identification proof
+      2. Land ownership proof."
+
+  utter_steps_needed_seed_subsidy:
+    - text: "To apply for fertilizer subsidy, follow these steps:
+      1. Contact authorized dealer participating in subsidy scheme.
+      2. Purchase fertilizers with required documents.
+      3. Keep purchase receipts for reference.
+      4. For more information, visit https://www.fert.nic.in/fertilizer-subsidy"
+
+  utter_apply_fertilizer_subsidy:
+    - text: "To apply for fertilizer subsidy in India, begin by contacting the nearest authorized dealer or retailer of fertilizers who participates in the subsidy scheme. Purchase fertilizers from these authorized dealers by providing your Aadhaar card and other necessary identification documents. The subsidy amount is usually provided directly to the dealers, reducing the cost for you at the point of purchase. Ensure that the fertilizers purchased are eligible for subsidy under the government scheme and keep the purchase receipts for future reference. For more information, visit https://www.fert.nic.in/fertilizer-subsidy"
+
+  utter_documents_needed_fertilizer_subsidy:
+    - text: "To apply for fertilizer subsidy, you'll need the following documents:
+      1. Aadhaar card or identification proof
+      Ensure to have these documents ready before purchasing fertilizers."
+
+  utter_steps_needed_fertilizer_subsidy:
+    - text: "To apply for fertilizer subsidy, follow these steps:
+      1. Contact authorized dealer participating in subsidy scheme.
+      2. Purchase fertilizers with required documents.
+      3. Keep purchase receipts for reference.
+      4. For more information, visit https://www.fert.nic.in/fertilizer-subsidy"
+
+  utter_apply_irrigation_subsidy:
+    - text: "To apply for irrigation subsidy in India, start by researching the various irrigation schemes available in your state or region. Contact the local agriculture department or irrigation authority to obtain information on eligibility criteria, required documents, and application procedures. Typically, you'll need to fill out an application form and submit it along with documents such as land ownership proof, Aadhaar card, and bank account details. After submitting the application, follow up with the authorities to track its status. If approved, the subsidy amount will be disbursed as per the scheme's guidelines, often directly to your bank account. For more information, visit: https://services.india.gov.in/service/detail/application-for-assistance-under-micro-irrigation"
+
+  utter_documents_needed_irrigation_subsidy:
+    - text: "To apply for irrigation subsidy, you'll need the following documents:
+      1. Land ownership proof
+      2. Aadhaar card or identification proof
+      3. Bank account details
+      Ensure to have these documents ready before applying."
+
+  utter_steps_needed_irrigation_subsidy:
+    - text: "To apply for irrigation subsidy, follow these steps:
+      1. Research irrigation schemes and eligibility criteria.
+      2. Obtain application form and guidelines from local authorities.
+      3. Fill out application form and submit with required documents.
+      4. Follow up on application status.
+      5. For more information, visit https://services.india.gov.in/service/detail/application-for-assistance-under-micro-irrigation"
+
+  # Responses for Power Subsidy
+  utter_apply_power_subsidy:
+    - text: "To apply for power subsidy in India, first, confirm your eligibility based on your state's guidelines, then reach out to your local electricity provider or distribution company to obtain information on the subsidy scheme and application process. Gather the required documents such as proof of identity, residence, and ownership, and fill out the application form accurately. Submit the completed form along with the necessary documents to the designated authority and follow up to track the application status. If approved, the subsidy will typically be applied to your electricity bill according to the scheme's guidelines. For more information, visit: https://sansad.in/getFile/loksabhaquestions/annex/175/AU3890.pdf?source=pqals"
+
+  utter_documents_needed_power_subsidy:
+    - text: "To apply for power subsidy, you'll need the following documents:
+      1. Proof of identity
+      2. Proof of residence
+      3. Proof of ownership
+      Ensure to have these documents ready before applying."
+
+  utter_steps_needed_power_subsidy:
+    - text: "To apply for power subsidy, follow these steps:
+      1. Confirm eligibility based on state guidelines.
+      2. Obtain information from local electricity provider.
+      3. Fill out application accurately.
+      4. Submit application and required documents.
+      5. Follow up on application status.
+      6. For more information, visit https://sansad.in/getFile/loksabhaquestions/annex/175/AU3890.pdf?source=pqals"
+
+  # Responses for Export Subsidy
+  utter_apply_export_subsidy:
+    - text: "Under the MEIS Scheme, an incentive of 2% to 5% of the FOB value of exports is provided to all the exporters (merchant as well as manufacturer exporter), irrespective of their annual turnover. For more information, visit: https://www.indiantradeportal.in/vs.jsp?lang=0&id=0,25,857,3901"
+
+  utter_documents_needed_export_subsidy:
+    - text: "There are no specific documents needed to apply for export subsidy under the MEIS Scheme. Eligible exporters can avail the subsidy based on their export transactions."
+
+  utter_steps_needed_export_subsidy:
+    - text: "To avail export subsidy under the MEIS Scheme, exporters need to ensure their exports are eligible under the scheme's guidelines. The subsidy is automatically applied based on the FOB value of exports. For more information, visit: https://www.indiantradeportal.in/vs.jsp?lang=0&id=0,25,857,3901"
+
+  # Responses for Credit Subsidy
+  utter_apply_credit_subsidy:
+    - text: "To apply for credit subsidy in India, first, determine the specific credit subsidy scheme that aligns with your needs, such as those offered by the government or financial institutions for various sectors like agriculture, MSMEs, or housing. Then, approach the designated financial institutions or banks participating in the scheme, fill out the application form, and provide the necessary documentation, including proof of eligibility and collateral if required. Follow up with the institution to track the application status, and upon approval, utilize the subsidized credit as per the scheme's guidelines for your intended purpose. For more information, visit: https://pmaymis.gov.in/Open/clss.html#:~:text=Subsidy%20Scheme%20(CLSS)-,Credit%20Linked%20Subsidy%20Scheme%20(CLSS),criteria%20as%20the%20Scheme%20Guidelines.&text=CLSS%20subsidy%20application%20may%20be,the%20concerned%20Bank%2FHFC%20branch."
+
+  utter_documents_needed_credit_subsidy:
+    - text: "To apply for credit subsidy, you'll need the following documents:
+      1. Proof of eligibility
+      2. Collateral documents (if required)
+      Ensure to have these documents ready before applying."
+
+  utter_steps_needed_credit_subsidy:
+    - text: "To apply for credit subsidy, follow these steps:
+      1. Determine eligibility and suitable scheme.
+      2. Approach designated financial institution.
+      3. Fill out application form and provide necessary documents.
+      4. Track application status with the institution.
+      5. For more information, visit https://pmaymis.gov.in/Open/clss.html#:~:text=Subsidy%20Scheme%20(CLSS)-,Credit%20Linked%20Subsidy%20Scheme%20(CLSS),criteria%20as%20the%20Scheme%20Guidelines.&text=CLSS%20subsidy%20application%20may%20be,the%20concerned%20Bank%2FHFC%20branch."
+
+  # Responses for Agriculture Equipment Subsidy
+  utter_apply_agriculture_equipment_subsidy:
+    - text: "To apply for agriculture equipment subsidy in India, start by researching the available subsidy schemes offered by the government at the central or state level. Contact the nearest agriculture department or designated authority to obtain information on eligibility criteria, approved equipment, and application procedures. Gather the required documents, including proof of identity, land ownership, and bank account details. Fill out the application form accurately and submit it along with the necessary documents to the designated authority. Follow up on the application status and ensure compliance with any additional requirements or conditions specified by the scheme. For more information, visit: https://www.india.gov.in/topics/agriculture/agricultural-machinery"
+
+  utter_documents_needed_agriculture_equipment_subsidy:
+    - text: "To apply for agriculture equipment subsidy, you'll need the following documents:
+      1. Proof of identity
+      2. Land ownership documents
+      3. Bank account details
+      Ensure to have these documents ready before applying."
+
+  utter_steps_needed_agriculture_equipment_subsidy:
+    - text: "To apply for agriculture equipment subsidy, follow these steps:
+      1. Research available subsidy schemes.
+      2. Contact agriculture department for details.
+      3. Gather required documents.
+      4. Fill out application form accurately.
+      5. Submit application with necessary documents.
+      6. For more information, visit https://www.india.gov.in/topics/agriculture/agricultural-machinery"
+
+  # Responses for Agriculture Infrastructure Subsidy
+  utter_apply_agriculture_infrastructure_subsidy:
+    - text: "To apply for agriculture infrastructure subsidy in India, first, research the available subsidy schemes offered by the government at the central or state level, such as the Pradhan Mantri Kisan Sampada Yojana (PMKSY) or other relevant schemes. Contact the nearest agriculture department or designated authority to obtain detailed information on eligibility criteria, eligible infrastructure projects, and application procedures. Gather the required documents, including proof of identity, land ownership, project proposal, and cost estimates. Fill out the application form accurately and submit it along with the necessary documents to the designated authority within the specified timeframe. Follow up on the application status and ensure compliance with any additional requirements or conditions specified by the scheme. For more information, visit: https://www.myscheme.gov.in/schemes/aif"
+
+  utter_documents_needed_agriculture_infrastructure_subsidy:
+    - text: "To apply for agriculture infrastructure subsidy, you'll need the following documents:
+      1. Proof of identity
+      2. Land ownership documents
+      3. Project proposal
+      4. Cost estimates
+      Ensure to have these documents ready before applying."
+
+  utter_steps_needed_agriculture_infrastructure_subsidy:
+    - text: "To apply for agriculture infrastructure subsidy, follow these steps:
+      1. Research available subsidy schemes.
+      2. Contact agriculture department for details.
+      3. Gather required documents.
+      4. Fill out application form accurately.
+      5. Submit application with necessary documents.
+      6. For more information, visit https://www.myscheme.gov.in/schemes/aif"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

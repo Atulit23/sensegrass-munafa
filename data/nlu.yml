@@ -1,0 +1,1342 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: faq
+  examples: |
+    - what is munafa
+    - tell me about munafa
+
+- intent: kyc
+  examples: |
+    - how to do kyc
+    - how to avail kyc
+    - how to complete kyc
+    - how do i complete complete kyc
+    - what are the stpes i have to go through to complete kyc on munafa
+
+- intent: loans
+  examples: |
+    - what are the loans available
+    - What types of loans are available
+    - what all loans do you offer?
+
+- intent: tractor
+  examples: |
+    - What is a Tractor Loan?
+    - How to get tractor loan?
+    - How to avail tractor loan?
+    - What all is required to avail tractor loan?
+    - What information is required to avail tractor loan?
+
+- intent: crop
+  examples: |
+    - What is a Crop Loan?
+    - How to get Crop Loan?
+    - How to avail crop loan?
+
+- intent: gold
+  examples: |
+    - What is a Gold Loan?
+    - How to get Gold Loan
+    - How to avail Gold Loan?
+
+- intent: insurance
+  examples: |
+    - What types of insurance are available?
+    - What insurances are available?
+
+- intent: livestock
+  examples: |
+    - What is Livestock Insurance?
+    - How to get Livestock Insurance?
+    - How to avail Livestock Insurance?
+    - What information is required to obtain Livestock Insurance?
+
+- intent: farm
+  examples: |
+    - What is Farm Equipment Insurance?
+    - How to get Farm Equipment Insurance?
+    - What information is required to get Farm Equipment Insurance?
+
+- intent: weather
+  examples: |
+    - What is Weather Insurance?
+    - How to obtain Weather Insurance?
+    - What all information is required to get Weather Insurance?
+
+- intent: payment
+  examples: |
+    - What payment methods are allowed by Munafa
+    - What are the payment methods available?
+    - Can i use debit card to make payments
+    - Can i use UPI to make payments
+    - Can i use net banking to make payments
+
+- intent: mpin
+  examples: |
+    - How can one change the M-Pin?
+    - How do I change my M-Pin?
+
+- intent: ask_pm_kisan_scheme
+  examples: |
+    - What is the Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme?
+    - What is PM-KISAN scheme?
+    - What is the purpose of PM-KISAN scheme?
+    - What is the objective of PM-KISAN scheme?
+    - What is KISAN scheme?
+    - What is the Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)
+    - Tell me about Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)
+
+- intent: ask_pm_kisan_beneficiaries
+  examples: |
+    - How many beneficiaries have been covered under the Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme?
+    - What are the number of beneficiaries covered under the Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme?
+    - What are the number of beneficiaries covered under PM-KISAN scheme?
+    - What are the number of beneficiaries covered under PM-KISAN?
+
+- intent: ask_pm_kmy_scheme
+  examples: |
+    - What is the objective of Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY)?
+    - What is the purpose of Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY)?
+
+- intent: ask_pm_kmy_enrollment
+  examples: |
+    - How many farmers have enrolled under the Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY) so far?
+    - How many farmers have enrolled under PM-KMY?
+
+- intent: ask_pmfby_objective
+  examples: |
+    - What is the objective of the Pradhan Mantri Fasal Bima Yojana (PMFBY)?
+    - What is the objective of the PMFBY?
+    - What is the purpose of the PMFBY?
+
+- intent: ask_pmfby_applications
+  examples: |
+    - How many farmer applications were insured under the Pradhan Mantri Fasal Bima Yojana (PMFBY) since its launch?
+    - How many farmer applications have been insured under the Pradhan Mantri Fasal Bima Yojana (PMFBY)?
+    - How many farmer applications have been insured under the PMFBY?
+
+- intent: ask_miss_objective
+  examples: |
+    - What is the objective of Modified Interest Subvention Scheme (MISS)?
+    - What is the purpose of Modified Interest Subvention Scheme (MISS)?
+
+- intent: ask_miss_applications
+  examples: |
+    - How many new Kisan Credit Card (KCC) applications have been sanctioned under the Modified Interest Subvention Scheme (MISS)?
+    - How many new Kisan Credit Card (KCC) applications have been sanctioned under MISS?
+
+- intent: ask_aif_objective
+  examples: |
+    - What is the Agriculture Infrastructure Fund (AIF) aimed at?
+    - What is the purpose of Agriculture Infrastructure Fund (AIF)?
+    - What is the objective of Agriculture Infrastructure Fund (AIF)?
+
+- intent: ask_aif_disbursal
+  examples: |
+    - How much fund has been disbursed under the Agriculture Infrastructure Fund (AIF) as of December 31, 2023?
+    - How much fund has been disbursed under AIF?
+    - How much money has been disbursed under AIF?
+
+- intent: ask_fpos_objective
+  examples: |
+    - What is the objective of the scheme for the Formation & Promotion of new 10,000 Farmer Producer Organizations (FPOs)?
+    - What is the objective of the scheme for the FPOs?
+
+- intent: ask_fpos_registration
+  examples: |
+    - How many FPOs were registered under the Formation & Promotion scheme as of December 31, 2023?
+    - As of December 31, 2023, how many FPOs were registered under the scheme?
+
+- intent: ask_nbhm_objective
+  examples: |
+    - What is the objective of the National Beekeeping and Honey Mission (NBHM)?
+    - What are the goals of NBHM?
+
+- intent: ask_nbhm_bee_colonies
+  examples: |
+    - How many bee colonies are registered under the National Beekeeping and Honey Mission (NBHM)?
+    - Till date, how many bee colonies are registered under NBHM?
+
+- intent: ask_mis_pss_objective
+  examples: |
+    - What are the objectives of the Market Intervention Scheme and Price Support Scheme (MIS-PSS)?
+    - What is the purpose of MIS-PSS?
+
+- intent: ask_namo_drone_didi_objective
+  examples: |
+    - What is the objective of the Namo Drone Didi scheme?
+    - What are the goals of Namo Drone Didi?
+
+- intent: ask_namo_drone_didi_drones
+  examples: |
+    - How many drones are planned to be provided under the Namo Drone Didi scheme?
+    - What is the target number of drones under Namo Drone Didi?
+
+- intent: ask_rkvy_dpr_focus
+  examples: |
+    - What is the focus of the Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR)?
+    - What are the areas of concentration under RKVY-DPR?
+
+- intent: ask_rkvy_agri_startup_startups
+  examples: |
+    - How many start-ups have been selected under the RKVY Agri-startup Programme?
+    - Since when has the RKVY Agri-startup Programme been selecting start-ups?
+
+- intent: ask_shc_purpose
+  examples: |
+    - What is the purpose of the Soil Health Card (SHC) scheme?
+    - Why was the Soil Health Card scheme implemented?
+
+- intent: ask_shc_target
+  examples: |
+    - What is the target for conducting soil samples under the Soil Health Card (SHC) scheme?
+    - How many soil samples are planned to be conducted under SHC scheme?
+
+- intent: ask_rad_objective
+  examples: |
+    - What is the objective of the Rainfed Area Development (RAD) programme?
+    - What does RAD aim to achieve?
+
+- intent: ask_rad_area_covered
+  examples: |
+    - How much area has been covered under the Rainfed Area Development (RAD) programme?
+    - What is the total area covered by RAD?
+
+- intent: ask_pdmc_goal
+  examples: |
+    - What is the goal of the Per Drop More Crop (PDMC) scheme?
+    - What does PDMC aim to accomplish?
+
+- intent: ask_pdmc_area_covered
+  examples: |
+    - How many hectares of land have been covered under Micro Irrigation through the PDMC scheme?
+    - What is the total area covered under PDMC?
+
+- intent: ask_mif_purpose
+  examples: |
+    - What is the purpose of the Micro Irrigation Fund (MIF)?
+    - Why was MIF established?
+
+- intent: ask_mif_initial_corpus
+  examples: |
+    - How much initial corpus was allocated to the Micro Irrigation Fund (MIF)?
+    - What was the initial funding for MIF?
+
+- intent: ask_pkvy_objective
+  examples: |
+    - What is the objective of the Paramparagat Krishi Vikas Yojana (PKVY) scheme?
+    - What does PKVY aim to achieve?
+
+- intent: ask_pkvy_assistance
+  examples: |
+    - How much assistance does a farmer receive under the Paramparagat Krishi Vikas Yojana (PKVY)?
+    - What is the incentive amount for farmers under PKVY?
+
+- intent: ask_smam_objectives
+  examples: |
+    - What are the objectives of the Sub-Mission on Agriculture Mechanization (SMAM)?
+    - What does SMAM focus on?
+
+- intent: ask_smam_machinery_distributed
+  examples: |
+    - How many agricultural machinery and equipment have been distributed under the Sub-Mission on Agriculture Mechanization (SMAM)?
+    - What is the total number of machinery distributed under SMAM?
+
+- intent: ask_crop_residue_management_objective
+  examples: |
+    - What is the objective of the Crop Residue Management scheme?
+    - What does Crop Residue Management scheme aim to achieve?
+
+- intent: ask_crop_residue_management_fund_released
+  examples: |
+    - How much fund has been released under the Crop Residue Management scheme?
+    - What is the total fund released for Crop Residue Management?
+
+- intent: ask_agro_forestry_focus
+  examples: |
+    - What is the focus of the Agro-forestry scheme?
+    - What does the Agro-forestry scheme aim to promote?
+
+- intent: ask_nfsm_objective
+  examples: |
+    - What is the objective of the National Food Security Mission (NFSM)?
+    - What does NFSM aim to achieve?
+
+- intent: ask_nfsm_seed_hubs
+  examples: |
+    - How many seed-hubs have been established under the National Food Security Mission (NFSM)?
+    - What is the number of seed-hubs under NFSM?
+
+- intent: ask_smsp_objective
+  examples: |
+    - What is the objective of the Sub-Mission on Seed and Planting Material (SMSP)?
+    - What does SMSP aim to achieve?
+
+- intent: ask_nmeo_oil_palm_focus
+  examples: |
+    - What is the focus of the National Mission on Edible Oils (NMEO)-Oil Palm?
+    - What does NMEO-Oil Palm aim to promote?
+
+- intent: ask_nmeo_oil_palm_additional_area
+  examples: |
+    - How much additional area is targeted to be brought under Oil Palm plantation under NMEO-Oil Palm?
+    - What is the targeted additional area for Oil Palm plantation?
+
+- intent: ask_midh_objective
+  examples: |
+    - What is the objective of the Mission for Integrated Development of Horticulture (MIDH)?
+    - What does MIDH aim to achieve?
+
+- intent: ask_midh_additional_area_covered
+  examples: |
+    - How much additional area of identified horticulture crops has been covered under MIDH?
+    - What is the total additional area covered under MIDH?
+
+- intent: ask_nbm_objective
+  examples: |
+    - What is the objective of the National Bamboo Mission (NBM)?
+    - What does NBM aim to achieve?
+
+- intent: ask_nbm_bamboo_nurseries
+  examples: |
+    - How many Bamboo Nurseries have been established under the National Bamboo Mission (NBM)?
+    - What is the number of Bamboo Nurseries under NBM?
+
+- intent: ask_isam_purpose
+  examples: |
+    - What is the purpose of the Integrated Scheme for Agriculture Marketing (ISAM)?
+    - What does ISAM aim to achieve?
+
+- intent: ask_e_nam_scheme
+  examples: |
+    - What is the National Agriculture Market (e-NAM) scheme?
+    - What does e-NAM facilitate?
+
+- intent: ask_movcdner_goal
+  examples: |
+    - What is the goal of the Mission Organic Value Chain Development for North Eastern Region?
+    - What does MOVCDNER aim to achieve?
+
+- intent: ask_movcdner_fund_released
+  examples: |
+    - How much fund has been released under the Mission Organic Value Chain Development for North Eastern Region?
+    - What is the total fund released under MOVCDNER?
+
+- intent: ask_smae_objective
+  examples: |
+    - What is the objective of the Sub-Mission on Agriculture Extension (SMAE)?
+    - What does SMAE aim to achieve?
+
+- intent: ask_smae_digital_initiatives
+  examples: |
+    - What digital initiatives are part of the Agricultural Extension under SMAE?
+    - Which digital programs are included in SMAE for agricultural extension?
+
+- intent: ask_digital_agriculture_objective
+  examples: |
+    - What is the objective of Digital Agriculture?
+    - What does Digital Agriculture aim to achieve?
+
+- intent: ask_agristack_foundational_layer
+  examples: |
+    - What is the foundational layer of the AgriStack architecture?
+    - What components make up the foundational layer of AgriStack?
+
+- intent: ask_pm_kisan_scheme_brief
+  examples: |
+    - Give me a brief about Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme.
+    - Can you provide an overview of PM-KISAN scheme?
+    - What is PM-KISAN?
+    - What is PM-KISAN scheme?
+    - Tell me about PM-KISAN scheme
+    - What is Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme?
+    - What are the benefits of Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme?
+    - How is Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme beneficial?
+
+- intent: ask_pm_kmy_scheme_brief
+  examples: |
+    - Give me a brief about Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY) scheme.
+    - Can you summarize PM-KMY scheme?
+    - What is PM-KMY scheme?
+    - What is PM-KMY?
+    - What is Pradhan Mantri Kisan MaanDhan Yojana?
+    - Tell me about PM-KMY?
+    - What are the benefits of Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY)?
+    - How is Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY) beneficial?
+
+- intent: ask_pmfby_scheme_brief
+  examples: |
+    - Give me a brief about Pradhan Mantri Fasal Bima Yojana (PMFBY) scheme.
+    - What is the overview of PMFBY scheme?
+    - What is PMFBY scheme?
+    - What is Pradhan Mantri Fasal Bima Yojana (PMFBY) scheme?
+    - What are the benefits of Pradhan Mantri Fasal Bima Yojana (PMFBY) scheme?
+    - How is Pradhan Mantri Fasal Bima Yojana (PMFBY) scheme beneficial?
+    - Tell me about PMFBY scheme?
+
+- intent: ask_miss_scheme_brief
+  examples: |
+    - Give me a brief about Modified Interest Subvention Scheme (MISS).
+    - Can you summarize the MISS scheme?
+    - What is MISS scheme?
+    - What is Modified Interest Subvention Scheme?
+    - What are the benefits of Modified Interest Subvention Scheme (MISS)?
+    - How is Modified Interest Subvention Scheme (MISS) beneficial?
+    - Tell me about MISS scheme?
+
+- intent: ask_aif_scheme_brief
+  examples: |
+    - Give me a brief about Agriculture Infrastructure Fund (AIF) scheme.
+    - What are the benefits of Agriculture Infrastructure Fund (AIF) scheme.
+    - How is Agriculture Infrastructure Fund (AIF) scheme beneficial?
+    - What is the overview of AIF scheme?
+    - What is AIF scheme?
+    - What is Agriculture Infrastructure Fund scheme?
+    - Tell me about AIF scheme?
+
+- intent: ask_fpo_scheme_brief
+  examples: |
+    - Give me a brief about the Formation & Promotion of new 10,000 FPOs scheme.
+    - What are the benefits of Formation & Promotion of new 10,000 FPOs scheme?
+    - How is Formation & Promotion of new 10,000 FPOs scheme beneficial?
+    - What is the overview of the FPO formation scheme?
+    - What is FPO formation scheme?
+    - Tell me about FPO formation scheme
+
+- intent: ask_nbhm_scheme_brief
+  examples: |
+    - Give me a brief about National Beekeeping and Honey Mission (NBHM) scheme.
+    - What are the benefits of National Beekeeping and Honey Mission (NBHM) scheme?
+    - How is National Beekeeping and Honey Mission (NBHM) scheme beneficial?
+    - Can you summarize NBHM scheme?
+    - What is NBHM scheme?
+    - What is National Beekeeping and Honey Mission scheme?
+    - Tell me about NBHM scheme?
+
+- intent: ask_mis_pss_scheme_brief
+  examples: |
+    - Give me a brief about Market Intervention Scheme and Price Support Scheme (MIS-PSS).
+    - What are the benefits of Market Intervention Scheme and Price Support Scheme (MIS-PSS)?
+    - How is Market Intervention Scheme and Price Support Scheme (MIS-PSS) beneficial?
+    - What is the goal of MIS-PSS?
+    - What is MIS-PSS?
+    - Tell me about MIS-PSS
+    - What is Market Intervention Scheme and Price Support Scheme (MIS-PSS)
+
+- intent: ask_namo_drone_didi_scheme_brief
+  examples: |
+    - Give me a brief about Namo Drone Didi scheme.
+    - What are the benefits of Namo Drone Didi scheme?
+    - How is Namo Drone Didi scheme beneficial?
+    - Can you provide an overview of Namo Drone Didi scheme?
+    - What is Namo Drone Didi scheme
+    - Tell me about Namo Drone Didi scheme
+
+- intent: ask_rkvy_dpr_scheme_brief
+  examples: |
+    - Give me a brief about Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR).
+    - What are the benefits of Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR)?
+    - How is Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR) beneficial?
+    - What is the RKVY-DPR scheme about?
+    - What is the RKVY-DPR scheme?
+    - Tell me about RKVY-DPR scheme?
+- intent: ask_shc_scheme_brief
+  examples: |
+    - Give me a brief about Soil Health Card (SHC) scheme.
+    - Can you summarize the SHC scheme?
+    - What is SHC scheme?
+    - Tell me about SHC scheme?
+    - What are the benefits of the Soil Health Card scheme?
+    - How is the Soil Health Card scheme beneficial?
+
+- intent: ask_rad_scheme_brief
+  examples: |
+    - Give me a brief about Rainfed Area Development (RAD) scheme.
+    - What is the RAD scheme?
+    - What is the Rainfed Area Development scheme?
+    - Tell me about RAD scheme?
+    - What are the benefits of the Rainfed Area Development scheme?
+    - How is the Rainfed Area Development scheme beneficial?
+
+- intent: ask_pdmc_scheme_brief
+  examples: |
+    - Give me a brief about Per Drop More Crop (PDMC) scheme.
+    - What is PDMC scheme?
+    - What is Per Drop More Crop (PDMC) scheme?
+    - Tell me about PDMC scheme?
+    - What are the benefits of the Per Drop More Crop scheme?
+    - How is the Per Drop More Crop scheme beneficial?
+
+- intent: ask_mif_scheme_brief
+  examples: |
+    - Give me a brief about Micro Irrigation Fund (MIF) scheme.
+    - Can you provide an overview of MIF scheme?
+    - What is MIF scheme?
+    - What is Micro Irrigation Fund scheme?
+    - Tell me about MIF scheme?
+    - What are the benefits of the Micro Irrigation Fund scheme?
+    - How is the Micro Irrigation Fund scheme beneficial?
+
+- intent: ask_pkvy_scheme_brief
+  examples: |
+    - Give me a brief about Paramparagat Krishi Vikas Yojana (PKVY) scheme.
+    - What is the overview of PKVY scheme?
+    - What is Paramparagat Krishi Vikas Yojana scheme?
+    - Tell me about Paramparagat Krishi Vikas Yojana scheme
+    - Tell me about PKVY
+    - What are the benefits of the Paramparagat Krishi Vikas Yojana scheme?
+    - How is the Paramparagat Krishi Vikas Yojana scheme beneficial?
+
+- intent: ask_smam_scheme_brief
+  examples: |
+    - Give me a brief about Sub-Mission on Agriculture Mechanization (SMAM) scheme.
+    - What is SMAM scheme?
+    - Can you tell me about SMAM scheme?
+    - What are the benefits of the Sub-Mission on Agriculture Mechanization scheme?
+    - How is the Sub-Mission on Agriculture Mechanization scheme beneficial?
+
+- intent: ask_crm_scheme_brief
+  examples: |
+    - Give me a brief about Crop Residue Management scheme.
+    - What is Crop Residue Management scheme?
+    - What is CRM scheme?
+    - Can you tell me about Crop Residue Management scheme?
+    - What are the benefits of the Crop Residue Management scheme?
+    - How is the Crop Residue Management scheme beneficial?
+
+- intent: ask_agro_forestry_scheme_brief
+  examples: |
+    - Give me a brief about Agro-forestry scheme.
+    - What is Agro-forestry scheme?
+    - Can you tell me about Agro-forestry scheme?
+    - What are the benefits of the Agro-forestry scheme?
+    - How is the Agro-forestry scheme beneficial?
+
+- intent: ask_nfsm_scheme_brief
+  examples: |
+    - Give me a brief about National Food Security Mission (NFSM) scheme.
+    - What is NFSM scheme?
+    - Can you tell me about NFSM scheme?
+    - What are the benefits of the National Food Security Mission scheme?
+    - How is the National Food Security Mission scheme beneficial?
+
+- intent: ask_smsp_scheme_brief
+  examples: |
+    - Give me a brief about Sub-Mission on Seed and Planting Material (SMSP) scheme.
+    - What is SMSP scheme?
+    - Can you tell me about SMSP scheme?
+    - What are the benefits of the Sub-Mission on Seed and Planting Material scheme?
+    - How is the Sub-Mission on Seed and Planting Material scheme beneficial?
+
+- intent: ask_nmeo_oil_palm_scheme_brief
+  examples: |
+    - Give me a brief about National Mission on Edible Oils (NMEO)-Oil Palm scheme.
+    - What is NMEO-Oil Palm scheme?
+    - Can you tell me about NMEO-Oil Palm scheme?
+    - What are the benefits of the National Mission on Edible Oils-Oil Palm scheme?
+    - How is the National Mission on Edible Oils-Oil Palm scheme beneficial?
+
+- intent: ask_midh_scheme_brief
+  examples: |
+    - Give me a brief about Mission for Integrated Development of Horticulture (MIDH) scheme.
+    - What is MIDH scheme?
+    - Can you tell me about MIDH scheme?
+    - What are the benefits of the Mission for Integrated Development of Horticulture scheme?
+    - How is the Mission for Integrated Development of Horticulture scheme beneficial?
+
+- intent: ask_nbm_scheme_brief
+  examples: |
+    - Give me a brief about National Bamboo Mission (NBM) scheme.
+    - What is NBM scheme?
+    - Can you tell me about NBM scheme?
+    - What are the benefits of the National Bamboo Mission scheme?
+    - How is the National Bamboo Mission scheme beneficial?
+
+- intent: ask_isam_scheme_brief
+  examples: |
+    - Give me a brief about Integrated Scheme for Agriculture Marketing (ISAM) scheme.
+    - What is ISAM scheme?
+    - Can you tell me about ISAM scheme?
+    - What are the benefits of the Integrated Scheme for Agriculture Marketing scheme?
+    - How is the Integrated Scheme for Agriculture Marketing scheme beneficial?
+
+- intent: ask_movcdner_scheme_brief
+  examples: |
+    - Give me a brief about Mission Organic Value Chain Development for North Eastern Region scheme.
+    - What is MOVCDNER scheme?
+    - Can you tell me about MOVCDNER scheme?
+    - What are the benefits of the Mission Organic Value Chain Development for North Eastern Region scheme?
+    - How is the Mission Organic Value Chain Development for North Eastern Region scheme beneficial?
+
+- intent: ask_smae_scheme_brief
+  examples: |
+    - Give me a brief about Sub-Mission on Agriculture Extension (SMAE) scheme.
+    - What is SMAE scheme?
+    - Can you tell me about SMAE scheme?
+    - What are the benefits of the Sub-Mission on Agriculture Extension scheme?
+    - How is the Sub-Mission on Agriculture Extension scheme beneficial?
+
+- intent: ask_digital_agriculture_scheme_brief
+  examples: |
+    - Give me a brief about Digital Agriculture scheme.
+    - What is Digital Agriculture scheme?
+    - Can you tell me about Digital Agriculture scheme?
+    - What are the benefits of the Digital Agriculture scheme?
+    - How is the Digital Agriculture scheme beneficial?
+
+- intent: ask_seed_subsidy
+  examples: |
+    - What is Seed Subsidy?
+    - Tell me about Seed Subsidy.
+    - Can you explain Seed Subsidy?
+
+- intent: ask_fertilizer_subsidy
+  examples: |
+    - What is Fertilizer Subsidy?
+    - Tell me about Fertilizer Subsidy.
+    - Can you explain Fertilizer Subsidy?
+
+- intent: ask_irrigation_subsidy
+  examples: |
+    - What is Irrigation Subsidy?
+    - Tell me about Irrigation Subsidy.
+    - Can you explain Irrigation Subsidy?
+
+- intent: ask_power_subsidy
+  examples: |
+    - What is Power Subsidy?
+    - Tell me about Power Subsidy.
+    - Can you explain Power Subsidy?
+
+- intent: ask_export_subsidy
+  examples: |
+    - What is Export Subsidy?
+    - Tell me about Export Subsidy.
+    - Can you explain Export Subsidy?
+
+- intent: ask_credit_subsidy
+  examples: |
+    - What is Credit Subsidy?
+    - Tell me about Credit Subsidy.
+    - Can you explain Credit Subsidy?
+
+- intent: ask_agriculture_equipment_subsidy
+  examples: |
+    - What is Agriculture Equipment Subsidy?
+    - Tell me about Agriculture Equipment Subsidy.
+    - Can you explain Agriculture Equipment Subsidy?
+
+- intent: ask_agriculture_infrastructure_subsidy
+  examples: |
+    - What is Agriculture Infrastructure Subsidy?
+    - Tell me about Agriculture Infrastructure Subsidy.
+    - Can you explain Agriculture Infrastructure Subsidy?
+
+- intent: ask_subsidies_available_to_farmers
+  examples: |
+    - What subsidies are available to farmers?
+    - Tell me about subsidies available to farmers.
+    - Can you explain subsidies available to farmers?
+
+- intent: ask_schemes_available_to_farmers
+  examples: |
+    - What are the schemes available to farmers?
+    - Tell me about schemes available to farmers.
+    - Can you explain schemes available to farmers?
+
+# - intent: get_price
+#   examples: |
+#     - What is the price of [wheat](product)?
+#     - How much does [cotton seed](product) cost?
+#     - How much does [cotton seeds](product) cost?
+#     - Tell me the price of [almond](product)
+#     - Tell me the price of [almonds](product)
+#     - Tell me the price of [litchi](product)
+#     - Tell me the price of [lime](product)
+#     - Tell me the price of [mango](product)
+#     - Tell me the price of [masur dal](product)
+#     - Tell me the price of [mushroom](product)
+#     - Tell me the price of [maida](product)
+
+- intent: get_price
+  examples: |
+    - What is the price?
+    - How much does it cost?
+    - Tell me the price.
+
+
+- intent: ask_how_to_apply_PM_Kisan
+  examples: |
+    - how to apply for PM-Kisan
+    - what are the steps needed to apply for PM-Kisan
+    - can you tell me how to enroll in PM-Kisan
+    - steps to apply for PM-Kisan scheme
+- intent: ask_documents_needed_PM_Kisan
+  examples: |
+    - what are the documents needed to apply for PM-Kisan
+    - documents required for PM-Kisan registration
+    - what documents do I need for PM-Kisan application
+    - required documents for PM-Kisan scheme
+
+- intent: ask_how_to_apply_PM_KMY
+  examples: |
+    - how to apply for PM-KMY
+    - what are the steps needed to apply for PM-KMY
+    - can you tell me how to enroll in PM-KMY
+    - steps to apply for PM-KMY scheme
+- intent: ask_documents_needed_PM_KMY
+  examples: |
+    - what are the documents needed to apply for PM-KMY
+    - documents required for PM-KMY registration
+    - what documents do I need for PM-KMY application
+    - required documents for PM-KMY scheme
+
+- intent: ask_how_to_apply_PMFBY
+  examples: |
+    - how to apply for PMFBY
+    - what are the steps needed to apply for PMFBY
+    - can you tell me how to enroll in PMFBY
+    - steps to apply for PMFBY scheme
+- intent: ask_documents_needed_PMFBY
+  examples: |
+    - what are the documents needed to apply for PMFBY
+    - documents required for PMFBY registration
+    - what documents do I need for PMFBY application
+    - required documents for PMFBY scheme
+
+- intent: ask_how_to_apply_MISS
+  examples: |
+    - how to apply for MISS
+    - what are the steps needed to apply for MISS
+    - can you tell me how to enroll in MISS
+    - steps to apply for MISS scheme
+- intent: ask_documents_needed_MISS
+  examples: |
+    - what are the documents needed to apply for MISS
+    - documents required for MISS registration
+    - what documents do I need for MISS application
+    - required documents for MISS scheme
+
+- intent: ask_how_to_apply_AIF
+  examples: |
+    - how to apply for AIF
+    - what are the steps needed to apply for AIF
+    - can you tell me how to enroll in AIF
+    - steps to apply for AIF scheme
+- intent: ask_documents_needed_AIF
+  examples: |
+    - what are the documents needed to apply for AIF
+    - documents required for AIF registration
+    - what documents do I need for AIF application
+    - required documents for AIF scheme
+
+- intent: ask_how_to_apply_FPOs_scheme
+  examples: |
+    - how to apply for FPOs scheme
+    - what are the steps needed to apply for FPOs scheme
+    - can you tell me how to enroll in FPOs scheme
+    - steps to apply for FPOs scheme
+- intent: ask_documents_needed_FPOs_scheme
+  examples: |
+    - what are the documents needed to apply for FPOs scheme
+    - documents required for FPOs scheme registration
+    - what documents do I need for FPOs scheme application
+    - required documents for FPOs scheme
+
+- intent: ask_how_to_apply_NBHM_scheme
+  examples: |
+    - how to apply for NBHM scheme
+    - what are the steps needed to apply for NBHM scheme
+    - can you tell me how to enroll in NBHM scheme
+    - steps to apply for NBHM scheme
+
+- intent: ask_documents_needed_NBHM_scheme
+  examples: |
+    - what are the documents needed to apply for NBHM scheme
+    - documents required for NBHM scheme registration
+    - what documents do I need for NBHM scheme application
+    - required documents for NBHM scheme
+
+- intent: ask_how_to_apply_MIS_PSS
+  examples: |
+    - how to apply for MIS-PSS
+    - what are the steps needed to apply for MIS-PSS
+    - can you tell me how to enroll in MIS-PSS
+    - steps to apply for MIS-PSS
+
+- intent: ask_documents_needed_MIS_PSS
+  examples: |
+    - what are the documents needed to apply for MIS-PSS
+    - documents required for MIS-PSS registration
+    - what documents do I need for MIS-PSS application
+    - required documents for MIS-PSS
+
+- intent: ask_apply_Namo_Didi_Scheme
+  examples: |
+    - How to apply for Namo Didi Scheme?
+    - Can you guide me through the application process for Namo Didi Scheme?
+    - What are the steps to apply for Namo Didi Scheme?
+- intent: ask_documents_Namo_Didi_Scheme
+  examples: |
+    - What are the documents needed to apply for Namo Didi Scheme?
+    - Could you tell me the required documents for Namo Didi Scheme application?
+    - What documents do I need to submit for Namo Didi Scheme?
+- intent: ask_steps_Namo_Didi_Scheme
+  examples: |
+    - What are the steps needed to apply for Namo Didi Scheme?
+    - Can you outline the application steps for Namo Didi Scheme?
+    - What is the process for applying to Namo Didi Scheme?
+
+- intent: ask_apply_RKVY_DPR
+  examples: |
+    - How to apply for Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR)?
+    - Can you guide me through the application process for RKVY-DPR?
+    - What are the steps to apply for RKVY-DPR?
+- intent: ask_documents_RKVY_DPR
+  examples: |
+    - What are the documents needed to apply for Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR)?
+    - Could you tell me the required documents for RKVY-DPR application?
+    - What documents do I need to submit for RKVY-DPR?
+- intent: ask_steps_RKVY_DPR
+  examples: |
+    - What are the steps needed to apply for Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR)?
+    - Can you outline the application steps for RKVY-DPR?
+    - What is the process for applying to RKVY-DPR?
+
+- intent: ask_apply_SHC_scheme
+  examples: |
+    - How to apply for Soil Health Card (SHC) scheme?
+    - Can you guide me through the application process for SHC scheme?
+    - What are the steps to apply for SHC scheme?
+- intent: ask_documents_SHC_scheme
+  examples: |
+    - What are the documents needed to apply for Soil Health Card (SHC) scheme?
+    - Could you tell me the required documents for SHC scheme application?
+    - What documents do I need to submit for SHC scheme?
+- intent: ask_steps_SHC_scheme
+  examples: |
+    - What are the steps needed to apply for Soil Health Card (SHC) scheme?
+    - Can you outline the application steps for SHC scheme?
+    - What is the process for applying to Soil Health Card (SHC) scheme?
+
+- intent: ask_apply_RAD_scheme
+  examples: |
+    - How to apply for Rainfed Area Development (RAD) scheme?
+    - Can you guide me through the application process for RAD scheme?
+    - What are the steps to apply for RAD scheme?
+- intent: ask_documents_RAD_scheme
+  examples: |
+    - What are the documents needed to apply for Rainfed Area Development (RAD) scheme?
+    - Could you tell me the required documents for RAD scheme application?
+    - What documents do I need to submit for RAD scheme?
+- intent: ask_steps_RAD_scheme
+  examples: |
+    - What are the steps needed to apply for Rainfed Area Development (RAD) scheme?
+    - Can you outline the application steps for RAD scheme?
+    - What is the process for applying to Rainfed Area Development (RAD) scheme?
+
+- intent: ask_apply_PDMC_scheme
+  examples: |
+    - How to apply for Per Drop More Crop (PDMC) scheme?
+    - Can you guide me through the application process for PDMC scheme?
+    - What are the steps to apply for PDMC scheme?
+- intent: ask_documents_PDMC_scheme
+  examples: |
+    - What are the documents needed to apply for Per Drop More Crop (PDMC) scheme?
+    - Could you tell me the required documents for PDMC scheme application?
+    - What documents do I need to submit for PDMC scheme?
+- intent: ask_steps_PDMC_scheme
+  examples: |
+    - What are the steps needed to apply for Per Drop More Crop (PDMC) scheme?
+    - Can you outline the application steps for PDMC scheme?
+    - What is the process for applying to Per Drop More Crop (PDMC) scheme?
+
+- intent: ask_apply_MIF_scheme
+  examples: |
+    - How to apply for Micro Irrigation Fund (MIF) scheme?
+    - Can you guide me through the application process for MIF scheme?
+    - What are the steps to apply for MIF scheme?
+- intent: ask_documents_MIF_scheme
+  examples: |
+    - What are the documents needed to apply for Micro Irrigation Fund (MIF) scheme?
+    - Could you tell me the required documents for MIF scheme application?
+    - What documents do I need to submit for MIF scheme?
+- intent: ask_steps_MIF_scheme
+  examples: |
+    - What are the steps needed to apply for Micro Irrigation Fund (MIF) scheme?
+    - Can you outline the application steps for MIF scheme?
+    - What is the process for applying to Micro Irrigation Fund (MIF) scheme?
+
+- intent: ask_apply_PKVY_scheme
+  examples: |
+    - How to apply for Paramparagat Krishi Vikas Yojana (PKVY) scheme?
+    - Can you guide me through the application process for PKVY scheme?
+    - What are the steps to apply for PKVY scheme?
+- intent: ask_documents_PKVY_scheme
+  examples: |
+    - What are the documents needed to apply for Paramparagat Krishi Vikas Yojana (PKVY) scheme?
+    - Could you tell me the required documents for PKVY scheme application?
+    - What documents do I need to submit for PKVY scheme?
+- intent: ask_steps_PKVY_scheme
+  examples: |
+    - What are the steps needed to apply for Paramparagat Krishi Vikas Yojana (PKVY) scheme?
+    - Can you outline the application steps for PKVY scheme?
+    - What is the process for applying to Paramparagat Krishi Vikas Yojana (PKVY) scheme?
+
+- intent: ask_apply_SMAM_scheme
+  examples: |
+    - How to apply for Sub-Mission on Agriculture Mechanization (SMAM) scheme?
+    - Can you guide me through the application process for SMAM scheme?
+    - What are the steps to apply for SMAM scheme?
+- intent: ask_documents_SMAM_scheme
+  examples: |
+    - What are the documents needed to apply for Sub-Mission on Agriculture Mechanization (SMAM) scheme?
+    - Could you tell me the required documents for SMAM scheme application?
+    - What documents do I need to submit for SMAM scheme?
+- intent: ask_steps_SMAM_scheme
+  examples: |
+    - What are the steps needed to apply for Sub-Mission on Agriculture Mechanization (SMAM) scheme?
+    - Can you outline the application steps for SMAM scheme?
+    - What is the process for applying to Sub-Mission on Agriculture Mechanization (SMAM) scheme?
+
+- intent: ask_apply_CRM_scheme
+  examples: |
+    - How to apply for Crop Residue Management scheme?
+    - Can you guide me through the application process for CRM scheme?
+    - What are the steps to apply for CRM scheme?
+- intent: ask_documents_CRM_scheme
+  examples: |
+    - What are the documents needed to apply for Crop Residue Management scheme?
+    - Could you tell me the required documents for CRM scheme application?
+    - What documents do I need to submit for CRM scheme?
+- intent: ask_steps_CRM_scheme
+  examples: |
+    - What are the steps needed to apply for Crop Residue Management scheme?
+    - Can you outline the application steps for CRM scheme?
+    - What is the process for applying to Crop Residue Management scheme?
+
+- intent: ask_apply_Agro_forestry_scheme
+  examples: |
+    - How to apply for Agro-forestry scheme?
+    - Can you guide me through the application process for Agro-forestry scheme?
+    - What are the steps to apply for Agro-forestry scheme?
+- intent: ask_documents_Agro_forestry_scheme
+  examples: |
+    - What are the documents needed to apply for Agro-forestry scheme?
+    - Could you tell me the required documents for Agro-forestry scheme application?
+    - What documents do I need to submit for Agro-forestry scheme?
+- intent: ask_steps_Agro_forestry_scheme
+  examples: |
+    - What are the steps needed to apply for Agro-forestry scheme?
+    - Can you outline the application steps for Agro-forestry scheme?
+    - What is the process for applying to Agro-forestry scheme?
+
+- intent: ask_apply_NFSM_scheme
+  examples: |
+    - How to apply National Food Security Mission (NFSM) scheme?
+    - Can you guide me through the application process for NFSM scheme?
+    - What are the steps to apply for NFSM scheme?
+
+- intent: ask_documents_NFSM_scheme
+  examples: |
+    - What are the documents needed to apply for NFSM scheme?
+    - Could you tell me the required documents for NFSM scheme application?
+    - What documents do I need to submit for NFSM scheme?
+
+- intent: ask_steps_NFSM_scheme
+  examples: |
+    - What are the steps needed to apply for NFSM scheme?
+    - Can you outline the application steps for NFSM scheme?
+    - What is the process for applying to NFSM scheme?
+
+- intent: ask_apply_SMSP_scheme
+  examples: |
+    - How to apply for Sub-Mission on Seed and Planting Material (SMSP) scheme?
+    - Can you guide me through the application process for SMSP scheme?
+    - What are the steps to apply for SMSP scheme?
+
+- intent: ask_documents_SMSP_scheme
+  examples: |
+    - What are the documents needed to apply for SMSP scheme?
+    - Could you tell me the required documents for SMSP scheme application?
+    - What documents do I need to submit for SMSP scheme?
+
+- intent: ask_steps_SMSP_scheme
+  examples: |
+    - What are the steps needed to apply for SMSP scheme?
+    - Can you outline the application steps for SMSP scheme?
+    - What is the process for applying to SMSP scheme?
+
+- intent: ask_apply_NMEO_Oil_Palm_scheme
+  examples: |
+    - How to apply for National Mission on Edible Oils (NMEO)-Oil Palm scheme?
+    - Can you guide me through the application process for NMEO-Oil Palm scheme?
+    - What are the steps to apply for NMEO-Oil Palm scheme?
+
+- intent: ask_documents_NMEO_Oil_Palm_scheme
+  examples: |
+    - What are the documents needed to apply for NMEO-Oil Palm scheme?
+    - Could you tell me the required documents for NMEO-Oil Palm scheme application?
+    - What documents do I need to submit for NMEO-Oil Palm scheme?
+
+- intent: ask_steps_NMEO_Oil_Palm_scheme
+  examples: |
+    - What are the steps needed to apply for NMEO-Oil Palm scheme?
+    - Can you outline the application steps for NMEO-Oil Palm scheme?
+    - What is the process for applying to NMEO-Oil Palm scheme?
+
+- intent: ask_apply_MIDH_scheme
+  examples: |
+    - How to apply for Mission for Integrated Development of Horticulture (MIDH) scheme?
+    - Can you guide me through the application process for MIDH scheme?
+    - What are the steps to apply for MIDH scheme?
+
+- intent: ask_documents_MIDH_scheme
+  examples: |
+    - What are the documents needed to apply for MIDH scheme?
+    - Could you tell me the required documents for MIDH scheme application?
+    - What documents do I need to submit for MIDH scheme?
+
+- intent: ask_steps_MIDH_scheme
+  examples: |
+    - What are the steps needed to apply for MIDH scheme?
+    - Can you outline the application steps for MIDH scheme?
+    - What is the process for applying to MIDH scheme?
+
+- intent: ask_apply_NBM_scheme
+  examples: |
+    - How to apply for National Bamboo Mission (NBM) scheme?
+    - Can you guide me through the application process for NBM scheme?
+    - What are the steps to apply for NBM scheme?
+
+- intent: ask_documents_NBM_scheme
+  examples: |
+    - What are the documents needed to apply for NBM scheme?
+    - Could you tell me the required documents for NBM scheme application?
+    - What documents do I need to submit for NBM scheme?
+
+- intent: ask_steps_NBM_scheme
+  examples: |
+    - What are the steps needed to apply for NBM scheme?
+    - Can you outline the application steps for NBM scheme?
+    - What is the process for applying to NBM scheme?
+
+- intent: ask_apply_ISAM_scheme
+  examples: |
+    - How to apply for Integrated Scheme for Agriculture Marketing (ISAM) scheme?
+    - Can you guide me through the application process for ISAM scheme?
+    - What are the steps to apply for ISAM scheme?
+
+- intent: ask_documents_ISAM_scheme
+  examples: |
+    - What are the documents needed to apply for ISAM scheme?
+    - Could you tell me the required documents for ISAM scheme application?
+    - What documents do I need to submit for ISAM scheme?
+
+- intent: ask_steps_ISAM_scheme
+  examples: |
+    - What are the steps needed to apply for ISAM scheme?
+    - Can you outline the application steps for ISAM scheme?
+    - What is the process for applying to ISAM scheme?
+
+- intent: ask_apply_MOVCD_NER_scheme
+  examples: |
+    - How to apply for Mission Organic Value Chain Development for North Eastern Region scheme?
+    - Can you guide me through the application process for MOVCD-NER scheme?
+    - What are the steps to apply for MOVCD-NER scheme?
+
+- intent: ask_documents_MOVCD_NER_scheme
+  examples: |
+    - What are the documents needed to apply for MOVCD-NER scheme?
+    - Could you tell me the required documents for MOVCD-NER scheme application?
+    - What documents do I need to submit for MOVCD-NER scheme?
+
+- intent: ask_steps_MOVCD_NER_scheme
+  examples: |
+    - What are the steps needed to apply for MOVCD-NER scheme?
+    - Can you outline the application steps for MOVCD-NER scheme?
+    - What is the process for applying to MOVCD-NER scheme?
+
+- intent: ask_apply_SMAE_scheme
+  examples: |
+    - How to apply for Sub-Mission on Agriculture Extension (SMAE) scheme?
+    - Can you guide me through the application process for SMAE scheme?
+    - What are the steps to apply for SMAE scheme?
+
+- intent: ask_documents_SMAE_scheme
+  examples: |
+    - What are the documents needed to apply for SMAE scheme?
+    - Could you tell me the required documents for SMAE scheme application?
+    - What documents do I need to submit for SMAE scheme?
+
+- intent: ask_steps_SMAE_scheme
+  examples: |
+    - What are the steps needed to apply for SMAE scheme?
+    - Can you outline the application steps for SMAE scheme?
+    - What is the process for applying to Sub-Mission on Agriculture Extension (SMAE) scheme?
+    
+- intent: ask_digi_agri
+  examples: |
+    - How to apply for Digital Agriculture scheme?
+    - How to avail benefits of Digital Agriculture scheme?
+
+- intent: apply_seed_subsidy
+  examples: |
+    - how to apply for seed subsidy?
+    - apply for seed subsidy
+    - steps to avail seed subsidy
+    - how can I get seed subsidy?
+    - I want to apply for seed subsidy
+
+- intent: documents_needed_seed_subsidy
+  examples: |
+    - what are the documents needed to apply for seed subsidy?
+    - required documents for seed subsidy application
+    - documents for seed subsidy
+    - seed subsidy application documents
+    - what documents do I need for seed subsidy?
+- intent: steps_needed_seed_subsidy
+  examples: |
+    - what are the steps needed to apply for seed subsidy?
+    - steps for seed subsidy application
+    - how to apply for seed subsidy step by step?
+    - seed subsidy application process
+    - what steps should I follow for seed subsidy?
+- intent: apply_fertilizer_subsidy
+  examples: |
+    - how to apply for fertilizer subsidy?
+    - apply for fertilizer subsidy
+    - steps to avail fertilizer subsidy
+    - how can I get fertilizer subsidy?
+    - I want to apply for fertilizer subsidy
+- intent: documents_needed_fertilizer_subsidy
+  examples: |
+    - what are the documents needed to apply for fertilizer subsidy?
+    - required documents for fertilizer subsidy application
+    - documents for fertilizer subsidy
+    - fertilizer subsidy application documents
+    - what documents do I need for fertilizer subsidy?
+- intent: steps_needed_fertilizer_subsidy
+  examples: |
+    - what are the steps needed to apply for fertilizer subsidy?
+    - steps for fertilizer subsidy application
+    - how to apply for fertilizer subsidy step by step?
+    - fertilizer subsidy application process
+    - what steps should I follow for fertilizer subsidy?
+- intent: apply_irrigation_subsidy
+  examples: |
+    - how to apply for irrigation subsidy?
+    - apply for irrigation subsidy
+    - steps to avail irrigation subsidy
+    - how can I get irrigation subsidy?
+    - I want to apply for irrigation subsidy
+- intent: documents_needed_irrigation_subsidy
+  examples: |
+    - what are the documents needed to apply for irrigation subsidy?
+    - required documents for irrigation subsidy application
+    - documents for irrigation subsidy
+    - irrigation subsidy application documents
+    - what documents do I need for irrigation subsidy?
+- intent: steps_needed_irrigation_subsidy
+  examples: |
+    - what are the steps needed to apply for irrigation subsidy?
+    - steps for irrigation subsidy application
+    - how to apply for irrigation subsidy step by step?
+    - irrigation subsidy application process
+    - what steps should I follow for irrigation subsidy?
+- intent: apply_power_subsidy
+  examples: |
+    - how to apply for power subsidy?
+    - apply for power subsidy
+    - steps to avail power subsidy
+    - how can I get power subsidy?
+    - I want to apply for power subsidy
+- intent: documents_needed_power_subsidy
+  examples: |
+    - what are the documents needed to apply for power subsidy?
+    - required documents for power subsidy application
+    - documents for power subsidy
+    - power subsidy application documents
+    - what documents do I need for power subsidy?
+- intent: steps_needed_power_subsidy
+  examples: |
+    - what are the steps needed to apply for power subsidy?
+    - steps for power subsidy application
+    - how to apply for power subsidy step by step?
+    - power subsidy application process
+    - what steps should I follow for power subsidy?
+- intent: apply_export_subsidy
+  examples: |
+    - how to apply for export subsidy?
+    - apply for export subsidy
+    - steps to avail export subsidy
+    - how can I get export subsidy?
+    - I want to apply for export subsidy
+- intent: documents_needed_export_subsidy
+  examples: |
+    - what are the documents needed to apply for export subsidy?
+    - required documents for export subsidy application
+    - documents for export subsidy
+    - export subsidy application documents
+    - what documents do I need for export subsidy?
+- intent: steps_needed_export_subsidy
+  examples: |
+    - what are the steps needed to apply for export subsidy?
+    - steps for export subsidy application
+    - how to apply for export subsidy step by step?
+    - export subsidy application process
+    - what steps should I follow for export subsidy?
+- intent: apply_credit_subsidy
+  examples: |
+    - how to apply for credit subsidy?
+    - apply for credit subsidy
+    - steps to avail credit subsidy
+    - how can I get credit subsidy?
+    - I want to apply for credit subsidy
+- intent: documents_needed_credit_subsidy
+  examples: |
+    - what are the documents needed to apply for credit subsidy?
+    - required documents for credit subsidy application
+    - documents for credit subsidy
+    - credit subsidy application documents
+    - what documents do I need for credit subsidy?
+- intent: steps_needed_credit_subsidy
+  examples: |
+    - what are the steps needed to apply for credit subsidy?
+    - steps for credit subsidy application
+    - how to apply for credit subsidy step by step?
+    - credit subsidy application process
+    - what steps should I follow for credit subsidy?
+- intent: apply_agriculture_equipment_subsidy
+  examples: |
+    - how to apply for agriculture equipment subsidy?
+    - apply for agriculture equipment subsidy
+    - steps to avail agriculture equipment subsidy
+    - how can I get agriculture equipment subsidy?
+    - I want to apply for agriculture equipment subsidy
+- intent: documents_needed_agriculture_equipment_subsidy
+  examples: |
+    - what are the documents needed to apply for agriculture equipment subsidy?
+    - required documents for agriculture equipment subsidy application
+    - documents for agriculture equipment subsidy
+    - agriculture equipment subsidy application documents
+    - what documents do I need for agriculture equipment subsidy?
+- intent: steps_needed_agriculture_equipment_subsidy
+  examples: |
+    - what are the steps needed to apply for agriculture equipment subsidy?
+    - steps for agriculture equipment subsidy application
+    - how to apply for agriculture equipment subsidy step by step?
+    - agriculture equipment subsidy application process
+    - what steps should I follow for agriculture equipment subsidy?
+- intent: apply_agriculture_infrastructure_subsidy
+  examples: |
+    - how to apply for agriculture infrastructure subsidy?
+    - apply for agriculture infrastructure subsidy
+    - steps to avail agriculture infrastructure subsidy
+    - how can I get agriculture infrastructure subsidy?
+    - I want to apply for agriculture infrastructure subsidy
+- intent: documents_needed_agriculture_infrastructure_subsidy
+  examples: |
+    - what are the documents needed to apply for agriculture infrastructure subsidy?
+    - required documents for agriculture infrastructure subsidy application
+    - documents for agriculture infrastructure subsidy
+    - agriculture infrastructure subsidy application documents
+    - what documents do I need for agriculture infrastructure subsidy?
+
+- intent: steps_needed_agriculture_infrastructure_subsidy
+  examples: |
+    - what are the steps needed to apply for agriculture infrastructure subsidy?
+    - steps for agriculture infrastructure subsidy application
+    - how to apply for agriculture infrastructure subsidy step by step?
+    - agriculture infrastructure subsidy application process
+    - what steps should I follow for agriculture infrastructure subsidy?

@@ -1,0 +1,978 @@
+version: "3.1"
+
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq
+  - action: utter_faq
+
+- rule: respond to FAQs 1
+  steps:
+  - intent: kyc
+  - action: utter_kyc
+
+- rule: respond to FAQs 2
+  steps:
+  - intent: loans
+  - action: utter_loans
+
+- rule: respond to FAQs 3
+  steps:
+  - intent: tractor
+  - action: utter_tractor
+
+- rule: respond to FAQs 4
+  steps:
+  - intent: crop
+  - action: utter_crop
+
+- rule: respond to FAQs 5
+  steps:
+  - intent: gold
+  - action: utter_gold
+
+- rule: respond to FAQs 5
+  steps:
+  - intent: insurance
+  - action: utter_insurance
+
+- rule: respond to FAQs 6
+  steps:
+  - intent: livestock
+  - action: utter_livestock
+
+- rule: respond to FAQs 7
+  steps:
+  - intent: farm
+  - action: utter_farm
+
+- rule: respond to FAQs 8
+  steps:
+  - intent: weather
+  - action: utter_weather
+
+- rule: respond to FAQs 9
+  steps:
+  - intent: payment
+  - action: utter_payment
+
+- rule: respond to FAQs 10
+  steps:
+  - intent: mpin
+  - action: utter_mpin
+
+- rule: Respond to PM-KISAN scheme query
+  steps:
+  - intent: ask_pm_kisan_scheme
+  - action: utter_pm_kisan_scheme
+
+- rule: Respond to PM-KISAN beneficiaries query
+  steps:
+  - intent: ask_pm_kisan_beneficiaries
+  - action: utter_pm_kisan_beneficiaries
+
+- rule: Respond to PM-KMY scheme query
+  steps:
+  - intent: ask_pm_kmy_scheme
+  - action: utter_pm_kmy_scheme
+
+- rule: Respond to PM-KMY enrollment query
+  steps:
+  - intent: ask_pm_kmy_enrollment
+  - action: utter_pm_kmy_enrollment
+
+- rule: Respond to PMFBY objective query
+  steps:
+  - intent: ask_pmfby_objective
+  - action: utter_pmfby_objective
+
+- rule: Respond to PMFBY insured applications query
+  steps:
+  - intent: ask_pmfby_applications
+  - action: utter_pmfby_applications
+
+- rule: Respond to MISS objective query
+  steps:
+  - intent: ask_miss_objective
+  - action: utter_miss_objective
+
+- rule: Respond to MISS sanctioned applications query
+  steps:
+  - intent: ask_miss_applications
+  - action: utter_miss_applications
+
+- rule: Respond to AIF objective query
+  steps:
+  - intent: ask_aif_objective
+  - action: utter_aif_objective
+
+- rule: Respond to AIF fund disbursal query
+  steps:
+  - intent: ask_aif_disbursal
+  - action: utter_aif_disbursal
+
+- rule: Respond to FPOs scheme objective query
+  steps:
+  - intent: ask_fpos_objective
+  - action: utter_fpos_objective
+
+- rule: Respond to FPOs registration query
+  steps:
+  - intent: ask_fpos_registration
+  - action: utter_fpos_registration
+
+- rule: Respond to NBHM objective query
+  steps:
+  - intent: ask_nbhm_objective
+  - action: utter_nbhm_objective
+
+- rule: Respond to NBHM bee colonies query
+  steps:
+  - intent: ask_nbhm_bee_colonies
+  - action: utter_nbhm_bee_colonies
+
+- rule: Respond to MIS-PSS objectives query
+  steps:
+  - intent: ask_mis_pss_objective
+  - action: utter_mis_pss_objective
+
+- rule: Respond to Namo Drone Didi scheme objective query
+  steps:
+  - intent: ask_namo_drone_didi_objective
+  - action: utter_namo_drone_didi_objective
+
+- rule: Respond to Namo Drone Didi drones planned query
+  steps:
+  - intent: ask_namo_drone_didi_drones
+  - action: utter_namo_drone_didi_drones
+
+- rule: Respond to RKVY-DPR focus query
+  steps:
+  - intent: ask_rkvy_dpr_focus
+  - action: utter_rkvy_dpr_focus
+
+- rule: Respond to RKVY Agri-startup Programme startups selected query
+  steps:
+  - intent: ask_rkvy_agri_startup_startups
+  - action: utter_rkvy_agri_startup_startups
+
+- rule: Respond to SHC scheme purpose query
+  steps:
+  - intent: ask_shc_purpose
+  - action: utter_shc_purpose
+
+- rule: Respond to SHC scheme target query
+  steps:
+  - intent: ask_shc_target
+  - action: utter_shc_target
+
+- rule: Respond to RAD objective query
+  steps:
+  - intent: ask_rad_objective
+  - action: utter_rad_objective
+
+- rule: Respond to RAD area covered query
+  steps:
+  - intent: ask_rad_area_covered
+  - action: utter_rad_area_covered
+
+- rule: Respond to PDMC goal query
+  steps:
+  - intent: ask_pdmc_goal
+  - action: utter_pdmc_goal
+
+- rule: Respond to PDMC area covered query
+  steps:
+  - intent: ask_pdmc_area_covered
+  - action: utter_pdmc_area_covered
+
+- rule: Respond to MIF purpose query
+  steps:
+  - intent: ask_mif_purpose
+  - action: utter_mif_purpose
+
+- rule: Respond to MIF initial corpus query
+  steps:
+  - intent: ask_mif_initial_corpus
+  - action: utter_mif_initial_corpus
+
+- rule: Respond to PKVY objective query
+  steps:
+  - intent: ask_pkvy_objective
+  - action: utter_pkvy_objective
+
+- rule: Respond to PKVY assistance query
+  steps:
+  - intent: ask_pkvy_assistance
+  - action: utter_pkvy_assistance
+
+- rule: Respond to SMAM objectives query
+  steps:
+  - intent: ask_smam_objectives
+  - action: utter_smam_objectives
+
+- rule: Respond to SMAM machinery distributed query
+  steps:
+  - intent: ask_smam_machinery_distributed
+  - action: utter_smam_machinery_distributed
+
+- rule: Respond to Crop Residue Management scheme objective query
+  steps:
+  - intent: ask_crop_residue_management_objective
+  - action: utter_crop_residue_management_objective
+
+- rule: Respond to Crop Residue Management scheme fund released query
+  steps:
+  - intent: ask_crop_residue_management_fund_released
+  - action: utter_crop_residue_management_fund_released
+
+- rule: Respond to Agro-forestry scheme focus query
+  steps:
+  - intent: ask_agro_forestry_focus
+  - action: utter_agro_forestry_focus
+
+- rule: Respond to NFSM objective query
+  steps:
+  - intent: ask_nfsm_objective
+  - action: utter_nfsm_objective
+
+- rule: Respond to NFSM seed-hubs established query
+  steps:
+  - intent: ask_nfsm_seed_hubs
+  - action: utter_nfsm_seed_hubs
+
+- rule: Respond to SMSP objective query
+  steps:
+  - intent: ask_smsp_objective
+  - action: utter_smsp_objective
+
+- rule: Respond to NMEO-Oil Palm focus query
+  steps:
+  - intent: ask_nmeo_oil_palm_focus
+  - action: utter_nmeo_oil_palm_focus
+
+- rule: Respond to NMEO-Oil Palm additional area targeted query
+  steps:
+  - intent: ask_nmeo_oil_palm_additional_area
+  - action: utter_nmeo_oil_palm_additional_area
+
+- rule: Respond to MIDH objective query
+  steps:
+  - intent: ask_midh_objective
+  - action: utter_midh_objective
+
+- rule: Respond to MIDH additional area covered query
+  steps:
+  - intent: ask_midh_additional_area_covered
+  - action: utter_midh_additional_area_covered
+
+- rule: Respond to NBM objective query
+  steps:
+  - intent: ask_nbm_objective
+  - action: utter_nbm_objective
+
+- rule: Respond to NBM Bamboo Nurseries established query
+  steps:
+  - intent: ask_nbm_bamboo_nurseries
+  - action: utter_nbm_bamboo_nurseries
+
+- rule: Respond to ISAM purpose query
+  steps:
+  - intent: ask_isam_purpose
+  - action: utter_isam_purpose
+
+- rule: Respond to e-NAM scheme query
+  steps:
+  - intent: ask_e_nam_scheme
+  - action: utter_e_nam_scheme
+
+- rule: Respond to MOVCDNER goal query
+  steps:
+  - intent: ask_movcdner_goal
+  - action: utter_movcdner_goal
+
+- rule: Respond to MOVCDNER fund released query
+  steps:
+  - intent: ask_movcdner_fund_released
+  - action: utter_movcdner_fund_released
+
+- rule: Respond to SMAE objective query
+  steps:
+  - intent: ask_smae_objective
+  - action: utter_smae_objective
+
+- rule: Respond to SMAE digital initiatives query
+  steps:
+  - intent: ask_smae_digital_initiatives
+  - action: utter_smae_digital_initiatives
+
+- rule: Respond to Digital Agriculture objective query
+  steps:
+  - intent: ask_digital_agriculture_objective
+  - action: utter_digital_agriculture_objective
+
+- rule: Respond to AgriStack foundational layer query
+  steps:
+  - intent: ask_agristack_foundational_layer
+  - action: utter_agristack_foundational_layer
+
+- rule: Respond to PM-KISAN scheme brief query
+  steps:
+  - intent: ask_pm_kisan_scheme_brief
+  - action: utter_pm_kisan_scheme_brief
+
+- rule: Respond to PM-KMY scheme brief query
+  steps:
+  - intent: ask_pm_kmy_scheme_brief
+  - action: utter_pm_kmy_scheme_brief
+
+- rule: Respond to PMFBY scheme brief query
+  steps:
+  - intent: ask_pmfby_scheme_brief
+  - action: utter_pmfby_scheme_brief
+
+- rule: Respond to MISS scheme brief query
+  steps:
+  - intent: ask_miss_scheme_brief
+  - action: utter_miss_scheme_brief
+
+- rule: Respond to AIF scheme brief query
+  steps:
+  - intent: ask_aif_scheme_brief
+  - action: utter_aif_scheme_brief
+
+- rule: Respond to Formation & Promotion of new 10,000 FPOs scheme brief query
+  steps:
+  - intent: ask_fpo_scheme_brief
+  - action: utter_fpo_scheme_brief
+
+- rule: Respond to National Beekeeping and Honey Mission (NBHM) scheme brief query
+  steps:
+  - intent: ask_nbhm_scheme_brief
+  - action: utter_nbhm_scheme_brief
+
+- rule: Respond to Market Intervention Scheme and Price Support Scheme (MIS-PSS) brief query
+  steps:
+  - intent: ask_mis_pss_scheme_brief
+  - action: utter_mis_pss_scheme_brief
+
+- rule: Respond to Namo Drone Didi scheme brief query
+  steps:
+  - intent: ask_namo_drone_didi_scheme_brief
+  - action: utter_namo_drone_didi_scheme_brief
+
+- rule: Respond to Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR) brief query
+  steps:
+  - intent: ask_rkvy_dpr_scheme_brief
+  - action: utter_rkvy_dpr_scheme_brief
+
+- rule: Respond to Soil Health Card (SHC) scheme brief query
+  steps:
+  - intent: ask_shc_scheme_brief
+  - action: utter_shc_scheme_brief
+
+- rule: Respond to Rainfed Area Development (RAD) scheme brief query
+  steps:
+  - intent: ask_rad_scheme_brief
+  - action: utter_rad_scheme_brief
+
+- rule: Respond to Per Drop More Crop (PDMC) scheme brief query
+  steps:
+  - intent: ask_pdmc_scheme_brief
+  - action: utter_pdmc_scheme_brief
+
+- rule: Respond to Micro Irrigation Fund (MIF) scheme brief query
+  steps:
+  - intent: ask_mif_scheme_brief
+  - action: utter_mif_scheme_brief
+
+- rule: Respond to Paramparagat Krishi Vikas Yojana (PKVY) scheme brief query
+  steps:
+  - intent: ask_pkvy_scheme_brief
+  - action: utter_pkvy_scheme_brief
+
+- rule: Respond to Sub-Mission on Agriculture Mechanization (SMAM) scheme brief query
+  steps:
+  - intent: ask_smam_scheme_brief
+  - action: utter_smam_scheme_brief
+
+- rule: Respond to Crop Residue Management scheme brief query
+  steps:
+  - intent: ask_crm_scheme_brief
+  - action: utter_crm_scheme_brief
+
+- rule: Respond to Agro-forestry scheme brief query
+  steps:
+  - intent: ask_agro_forestry_scheme_brief
+  - action: utter_agro_forestry_scheme_brief
+
+- rule: Respond to National Food Security Mission (NFSM) scheme brief query
+  steps:
+  - intent: ask_nfsm_scheme_brief
+  - action: utter_nfsm_scheme_brief
+
+- rule: Respond to Sub-Mission on Seed and Planting Material (SMSP) scheme brief query
+  steps:
+  - intent: ask_smsp_scheme_brief
+  - action: utter_smsp_scheme_brief
+
+- rule: Respond to National Mission on Edible Oils (NMEO)-Oil Palm scheme brief query
+  steps:
+  - intent: ask_nmeo_oil_palm_scheme_brief
+  - action: utter_nmeo_oil_palm_scheme_brief
+
+- rule: Respond to Mission for Integrated Development of Horticulture (MIDH) scheme brief query
+  steps:
+  - intent: ask_midh_scheme_brief
+  - action: utter_midh_scheme_brief
+
+- rule: Respond to National Bamboo Mission (NBM) scheme brief query
+  steps:
+  - intent: ask_nbm_scheme_brief
+  - action: utter_nbm_scheme_brief
+
+- rule: Respond to Integrated Scheme for Agriculture Marketing (ISAM) scheme brief query
+  steps:
+  - intent: ask_isam_scheme_brief
+  - action: utter_isam_scheme_brief
+
+- rule: Respond to Mission Organic Value Chain Development for North Eastern Region scheme brief query
+  steps:
+  - intent: ask_movcdner_scheme_brief
+  - action: utter_movcdner_scheme_brief
+
+- rule: Respond to Sub-Mission on Agriculture Extension (SMAE) scheme brief query
+  steps:
+  - intent: ask_smae_scheme_brief
+  - action: utter_smae_scheme_brief
+
+- rule: Respond to Digital Agriculture scheme brief query
+  steps:
+  - intent: ask_digital_agriculture_scheme_brief
+  - action: utter_digital_agriculture_scheme_brief
+
+- rule: Respond to Seed Subsidy query
+  steps:
+  - intent: ask_seed_subsidy
+  - action: utter_seed_subsidy_brief
+
+- rule: Respond to Fertilizer Subsidy query
+  steps:
+  - intent: ask_fertilizer_subsidy
+  - action: utter_fertilizer_subsidy_brief
+
+- rule: Respond to the question about Irrigation Subsidy
+  steps:
+  - intent: ask_irrigation_subsidy
+  - action: utter_irrigation_subsidy_brief
+
+- rule: Respond to the question about Power Subsidy
+  steps:
+  - intent: ask_power_subsidy
+  - action: utter_power_subsidy_brief
+
+- rule: Respond to the question about Export Subsidy
+  steps:
+  - intent: ask_export_subsidy
+  - action: utter_export_subsidy_brief
+
+- rule: Respond to the question about Credit Subsidy
+  steps:
+  - intent: ask_credit_subsidy
+  - action: utter_credit_subsidy_brief
+
+- rule: Respond to the question about Agriculture Equipment Subsidy
+  steps:
+  - intent: ask_agriculture_equipment_subsidy
+  - action: utter_agriculture_equipment_subsidy_brief
+
+- rule: Respond to the question about Agriculture Infrastructure Subsidy
+  steps:
+  - intent: ask_agriculture_infrastructure_subsidy
+  - action: utter_agriculture_infrastructure_subsidy_brief
+
+
+- rule: Respond to Subsidies available to farmers question
+  steps:
+  - intent: ask_subsidies_available_to_farmers
+  - action: utter_subsidies_available_brief
+
+- rule: Respond to Schemes available to farmers question
+  steps:
+  - intent: ask_schemes_available_to_farmers
+  - action: utter_schemes_available_brief
+
+- rule: Respond to price query
+  steps:
+  - intent: get_price
+  - action: action_get_price
+
+- rule: Respond to queries about applying for PM-Kisan
+  steps:
+  - intent: ask_how_to_apply_PM_Kisan
+  - action: utter_steps_to_apply_PM_Kisan
+
+- rule: Respond to queries about documents needed for PM-Kisan
+  steps:
+  - intent: ask_documents_needed_PM_Kisan
+  - action: utter_documents_needed_PM_Kisan
+
+- rule: Respond to queries about applying for PM-KMY
+  steps:
+  - intent: ask_how_to_apply_PM_KMY
+  - action: utter_steps_to_apply_PM_KMY
+
+- rule: Respond to queries about documents needed for PM-KMY
+  steps:
+  - intent: ask_documents_needed_PM_KMY
+  - action: utter_documents_needed_PM_KMY
+
+- rule: Respond to queries about applying for PMFBY
+  steps:
+  - intent: ask_how_to_apply_PMFBY
+  - action: utter_steps_to_apply_PMFBY
+
+- rule: Respond to queries about documents needed for PMFBY
+  steps:
+  - intent: ask_documents_needed_PMFBY
+  - action: utter_documents_needed_PMFBY
+
+- rule: Respond to queries about applying for MISS
+  steps:
+  - intent: ask_how_to_apply_MISS
+  - action: utter_steps_to_apply_MISS
+
+- rule: Respond to queries about documents needed for MISS
+  steps:
+  - intent: ask_documents_needed_MISS
+  - action: utter_documents_needed_MISS
+
+- rule: Respond to queries about applying for AIF
+  steps:
+  - intent: ask_how_to_apply_AIF
+  - action: utter_steps_to_apply_AIF
+
+- rule: Respond to queries about documents needed for AIF
+  steps:
+  - intent: ask_documents_needed_AIF
+  - action: utter_documents_needed_AIF
+
+- rule: Respond to queries about applying for FPOs scheme
+  steps:
+  - intent: ask_how_to_apply_FPOs_scheme
+  - action: utter_steps_to_apply_FPOs_scheme
+
+- rule: Respond to queries about documents needed for FPOs scheme
+  steps:
+  - intent: ask_documents_needed_FPOs_scheme
+  - action: utter_documents_needed_FPOs_scheme
+
+- rule: Respond to queries about applying for NBHM scheme
+  steps:
+  - intent: ask_how_to_apply_NBHM_scheme
+  - action: utter_steps_to_apply_NBHM_scheme
+
+- rule: Respond to queries about documents needed for NBHM scheme
+  steps:
+  - intent: ask_documents_needed_NBHM_scheme
+  - action: utter_documents_needed_NBHM_scheme
+
+- rule: Respond to queries about applying for MIS-PSS
+  steps:
+  - intent: ask_how_to_apply_MIS_PSS
+  - action: utter_steps_to_apply_MIS_PSS
+
+- rule: Respond to queries about documents needed for MIS-PSS
+  steps:
+  - intent: ask_documents_needed_MIS_PSS
+  - action: utter_documents_needed_MIS_PSS
+
+- rule: Respond to how to apply for Namo Didi Scheme
+  steps:
+  - intent: ask_apply_Namo_Didi_Scheme
+  - action: utter_apply_Namo_Didi_Scheme
+- rule: Respond to documents needed to apply for Namo Didi Scheme
+  steps:
+  - intent: ask_documents_Namo_Didi_Scheme
+  - action: utter_documents_Namo_Didi_Scheme
+- rule: Respond to steps needed to apply for Namo Didi Scheme
+  steps:
+  - intent: ask_steps_Namo_Didi_Scheme
+  - action: utter_steps_Namo_Didi_Scheme
+
+- rule: Respond to how to apply for Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR)
+  steps:
+  - intent: ask_apply_RKVY_DPR
+  - action: utter_apply_RKVY_DPR
+- rule: Respond to documents needed to apply for Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR)
+  steps:
+  - intent: ask_documents_RKVY_DPR
+  - action: utter_documents_RKVY_DPR
+- rule: Respond to steps needed to apply for Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR)
+  steps:
+  - intent: ask_steps_RKVY_DPR
+  - action: utter_steps_RKVY_DPR
+
+- rule: Respond to how to apply for Soil Health Card (SHC) scheme
+  steps:
+  - intent: ask_apply_SHC_scheme
+  - action: utter_apply_SHC_scheme
+- rule: Respond to documents needed to apply for Soil Health Card (SHC) scheme
+  steps:
+  - intent: ask_documents_SHC_scheme
+  - action: utter_documents_SHC_scheme
+- rule: Respond to steps needed to apply for Soil Health Card (SHC) scheme
+  steps:
+  - intent: ask_steps_SHC_scheme
+  - action: utter_steps_SHC_scheme
+
+- rule: Respond to how to apply for Rainfed Area Development (RAD) scheme
+  steps:
+  - intent: ask_apply_RAD_scheme
+  - action: utter_apply_RAD_scheme
+- rule: Respond to documents needed to apply for Rainfed Area Development (RAD) scheme
+  steps:
+  - intent: ask_documents_RAD_scheme
+  - action: utter_documents_RAD_scheme
+- rule: Respond to steps needed to apply for Rainfed Area Development (RAD) scheme
+  steps:
+  - intent: ask_steps_RAD_scheme
+  - action: utter_steps_RAD_scheme
+
+- rule: Respond to how to apply for Per Drop More Crop (PDMC) scheme
+  steps:
+  - intent: ask_apply_PDMC_scheme
+  - action: utter_apply_PDMC_scheme
+- rule: Respond to documents needed to apply for Per Drop More Crop (PDMC) scheme
+  steps:
+  - intent: ask_documents_PDMC_scheme
+  - action: utter_documents_PDMC_scheme
+- rule: Respond to steps needed to apply for Per Drop More Crop (PDMC) scheme
+  steps:
+  - intent: ask_steps_PDMC_scheme
+  - action: utter_steps_PDMC_scheme
+
+- rule: Respond to how to apply for Micro Irrigation Fund (MIF) scheme
+  steps:
+  - intent: ask_apply_MIF_scheme
+  - action: utter_apply_MIF_scheme
+- rule: Respond to documents needed to apply for Micro Irrigation Fund (MIF) scheme
+  steps:
+  - intent: ask_documents_MIF_scheme
+  - action: utter_documents_MIF_scheme
+- rule: Respond to steps needed to apply for Micro Irrigation Fund (MIF) scheme
+  steps:
+  - intent: ask_steps_MIF_scheme
+  - action: utter_steps_MIF_scheme
+
+- rule: Respond to how to apply for Paramparagat Krishi Vikas Yojana (PKVY) scheme
+  steps:
+  - intent: ask_apply_PKVY_scheme
+  - action: utter_apply_PKVY_scheme
+- rule: Respond to documents needed to apply for Paramparagat Krishi Vikas Yojana (PKVY) scheme
+  steps:
+  - intent: ask_documents_PKVY_scheme
+  - action: utter_documents_PKVY_scheme
+- rule: Respond to steps needed to apply for Paramparagat Krishi Vikas Yojana (PKVY) scheme
+  steps:
+  - intent: ask_steps_PKVY_scheme
+  - action: utter_steps_PKVY_scheme
+
+- rule: Respond to how to apply for Sub-Mission on Agriculture Mechanization (SMAM) scheme
+  steps:
+  - intent: ask_apply_SMAM_scheme
+  - action: utter_apply_SMAM_scheme
+- rule: Respond to documents needed to apply for Sub-Mission on Agriculture Mechanization (SMAM) scheme
+  steps:
+  - intent: ask_documents_SMAM_scheme
+  - action: utter_documents_SMAM_scheme
+- rule: Respond to steps needed to apply for Sub-Mission on Agriculture Mechanization (SMAM) scheme
+  steps:
+  - intent: ask_steps_SMAM_scheme
+  - action: utter_steps_SMAM_scheme
+
+- rule: Respond to how to apply for Crop Residue Management scheme
+  steps:
+  - intent: ask_apply_CRM_scheme
+  - action: utter_apply_CRM_scheme
+- rule: Respond to documents needed to apply for Crop Residue Management scheme
+  steps:
+  - intent: ask_documents_CRM_scheme
+  - action: utter_documents_CRM_scheme
+- rule: Respond to steps needed to apply for Crop Residue Management scheme
+  steps:
+  - intent: ask_steps_CRM_scheme
+  - action: utter_steps_CRM_scheme
+
+- rule: Respond to how to apply for Agro-forestry scheme
+  steps:
+  - intent: ask_apply_Agro_forestry_scheme
+  - action: utter_apply_Agro_forestry_scheme
+- rule: Respond to documents needed to apply for Agro-forestry scheme
+  steps:
+  - intent: ask_documents_Agro_forestry_scheme
+  - action: utter_documents_Agro_forestry_scheme
+- rule: Respond to steps needed to apply for Agro-forestry scheme
+  steps:
+  - intent: ask_steps_Agro_forestry_scheme
+  - action: utter_steps_Agro_forestry_scheme
+  
+- rule: Respond to ask_apply_NFSM_scheme
+  steps:
+  - intent: ask_apply_NFSM_scheme
+  - action: utter_apply_NFSM_scheme
+
+- rule: Respond to ask_documents_NFSM_scheme
+  steps:
+  - intent: ask_documents_NFSM_scheme
+  - action: utter_documents_NFSM_scheme
+
+- rule: Respond to ask_steps_NFSM_scheme
+  steps:
+  - intent: ask_steps_NFSM_scheme
+  - action: utter_steps_NFSM_scheme
+
+- rule: Respond to ask_apply_SMSP_scheme
+  steps:
+  - intent: ask_apply_SMSP_scheme
+  - action: utter_apply_SMSP_scheme
+
+- rule: Respond to ask_documents_SMSP_scheme
+  steps:
+  - intent: ask_documents_SMSP_scheme
+  - action: utter_documents_SMSP_scheme
+
+- rule: Respond to ask_steps_SMSP_scheme
+  steps:
+  - intent: ask_steps_SMSP_scheme
+  - action: utter_steps_SMSP_scheme
+
+- rule: Respond to ask_apply_NMEO_Oil_Palm_scheme
+  steps:
+  - intent: ask_apply_NMEO_Oil_Palm_scheme
+  - action: utter_apply_NMEO_Oil_Palm_scheme
+
+- rule: Respond to ask_documents_NMEO_Oil_Palm_scheme
+  steps:
+  - intent: ask_documents_NMEO_Oil_Palm_scheme
+  - action: utter_documents_NMEO_Oil_Palm_scheme
+
+- rule: Respond to ask_steps_NMEO_Oil_Palm_scheme
+  steps:
+  - intent: ask_steps_NMEO_Oil_Palm_scheme
+  - action: utter_steps_NMEO_Oil_Palm_scheme
+
+- rule: Respond to ask_apply_MIDH_scheme
+  steps:
+  - intent: ask_apply_MIDH_scheme
+  - action: utter_apply_MIDH_scheme
+
+- rule: Respond to ask_documents_MIDH_scheme
+  steps:
+  - intent: ask_documents_MIDH_scheme
+  - action: utter_documents_MIDH_scheme
+
+- rule: Respond to ask_steps_MIDH_scheme
+  steps:
+  - intent: ask_steps_MIDH_scheme
+  - action: utter_steps_MIDH_scheme
+
+- rule: Respond to ask_apply_NBM_scheme
+  steps:
+  - intent: ask_apply_NBM_scheme
+  - action: utter_apply_NBM_scheme
+
+- rule: Respond to ask_documents_NBM_scheme
+  steps:
+  - intent: ask_documents_NBM_scheme
+  - action: utter_documents_NBM_scheme
+
+- rule: Respond to ask_steps_NBM_scheme
+  steps:
+  - intent: ask_steps_NBM_scheme
+  - action: utter_steps_NBM_scheme
+
+- rule: Respond to ask_apply_ISAM_scheme
+  steps:
+  - intent: ask_apply_ISAM_scheme
+  - action: utter_apply_ISAM_scheme
+
+- rule: Respond to ask_documents_ISAM_scheme
+  steps:
+  - intent: ask_documents_ISAM_scheme
+  - action: utter_documents_ISAM_scheme
+
+- rule: Respond to ask_steps_ISAM_scheme
+  steps:
+  - intent: ask_steps_ISAM_scheme
+  - action: utter_steps_ISAM_scheme
+
+- rule: Respond to ask_apply_MOVCD_NER_scheme
+  steps:
+  - intent: ask_apply_MOVCD_NER_scheme
+  - action: utter_apply_MOVCD_NER_scheme
+
+- rule: Respond to ask_documents_MOVCD_NER_scheme
+  steps:
+  - intent: ask_documents_MOVCD_NER_scheme
+  - action: utter_documents_MOVCD_NER_scheme
+
+- rule: Respond to ask_steps_MOVCD_NER_scheme
+  steps:
+  - intent: ask_steps_MOVCD_NER_scheme
+  - action: utter_steps_MOVCD_NER_scheme
+
+- rule: Respond to ask_apply_SMAE_scheme
+  steps:
+  - intent: ask_apply_SMAE_scheme
+  - action: utter_apply_SMAE_scheme
+
+- rule: Respond to ask_documents_SMAE_scheme
+  steps:
+  - intent: ask_documents_SMAE_scheme
+  - action: utter_documents_SMAE_scheme
+
+- rule: Respond to ask_steps_SMAE_scheme
+  steps:
+  - intent: ask_steps_SMAE_scheme
+  - action: utter_steps_SMAE_scheme
+
+- rule: Respond to ask_digi_agri
+  steps:
+  - intent: ask_digi_agri
+  - action: utter_digi_agri
+
+- rule: Respond to apply_seed_subsidy
+  steps:
+  - intent: apply_seed_subsidy
+  - action: utter_apply_seed_subsidy
+
+- rule: Respond to documents_needed_seed_subsidy
+  steps:
+  - intent: documents_needed_seed_subsidy
+  - action: utter_documents_needed_seed_subsidy
+
+- rule: Respond to steps_needed_seed_subsidy
+  steps:
+  - intent: steps_needed_seed_subsidy
+  - action: utter_steps_needed_seed_subsidy
+
+- rule: Respond to apply_fertilizer_subsidy
+  steps:
+  - intent: apply_fertilizer_subsidy
+  - action: utter_apply_fertilizer_subsidy
+
+- rule: Respond to documents_needed_fertilizer_subsidy
+  steps:
+  - intent: documents_needed_fertilizer_subsidy
+  - action: utter_documents_needed_fertilizer_subsidy
+
+- rule: Respond to steps_needed_fertilizer_subsidy
+  steps:
+  - intent: steps_needed_fertilizer_subsidy
+  - action: utter_steps_needed_fertilizer_subsidy
+
+- rule: Respond to apply_irrigation_subsidy
+  steps:
+  - intent: apply_irrigation_subsidy
+  - action: utter_apply_irrigation_subsidy
+
+- rule: Respond to documents_needed_irrigation_subsidy
+  steps:
+  - intent: documents_needed_irrigation_subsidy
+  - action: utter_documents_needed_irrigation_subsidy
+
+- rule: Respond to steps_needed_irrigation_subsidy
+  steps:
+  - intent: steps_needed_irrigation_subsidy
+  - action: utter_steps_needed_irrigation_subsidy
+
+- rule: Respond to apply_power_subsidy
+  steps:
+  - intent: apply_power_subsidy
+  - action: utter_apply_power_subsidy
+
+- rule: Respond to documents_needed_power_subsidy
+  steps:
+  - intent: documents_needed_power_subsidy
+  - action: utter_documents_needed_power_subsidy
+
+- rule: Respond to steps_needed_power_subsidy
+  steps:
+  - intent: steps_needed_power_subsidy
+  - action: utter_steps_needed_power_subsidy
+
+- rule: Respond to apply_export_subsidy
+  steps:
+  - intent: apply_export_subsidy
+  - action: utter_apply_export_subsidy
+
+- rule: Respond to documents_needed_export_subsidy
+  steps:
+  - intent: documents_needed_export_subsidy
+  - action: utter_documents_needed_export_subsidy
+
+- rule: Respond to steps_needed_export_subsidy
+  steps:
+  - intent: steps_needed_export_subsidy
+  - action: utter_steps_needed_export_subsidy
+
+- rule: Respond to apply_credit_subsidy
+  steps:
+  - intent: apply_credit_subsidy
+  - action: utter_apply_credit_subsidy
+
+- rule: Respond to documents_needed_credit_subsidy
+  steps:
+  - intent: documents_needed_credit_subsidy
+  - action: utter_documents_needed_credit_subsidy
+
+- rule: Respond to steps_needed_credit_subsidy
+  steps:
+  - intent: steps_needed_credit_subsidy
+  - action: utter_steps_needed_credit_subsidy
+
+- rule: Respond to apply_agriculture_equipment_subsidy
+  steps:
+  - intent: apply_agriculture_equipment_subsidy
+  - action: utter_apply_agriculture_equipment_subsidy
+
+- rule: Respond to documents_needed_agriculture_equipment_subsidy
+  steps:
+  - intent: documents_needed_agriculture_equipment_subsidy
+  - action: utter_documents_needed_agriculture_equipment_subsidy
+
+- rule: Respond to steps_needed_agriculture_equipment_subsidy
+  steps:
+  - intent: steps_needed_agriculture_equipment_subsidy
+  - action: utter_steps_needed_agriculture_equipment_subsidy
+
+- rule: Respond to apply_agriculture_infrastructure_subsidy
+  steps:
+  - intent: apply_agriculture_infrastructure_subsidy
+  - action: utter_apply_agriculture_infrastructure_subsidy
+
+- rule: Respond to documents_needed_agriculture_infrastructure_subsidy
+  steps:
+  - intent: documents_needed_agriculture_infrastructure_subsidy
+  - action: utter_documents_needed_agriculture_infrastructure_subsidy
+
+- rule: Respond to steps_needed_agriculture_infrastructure_subsidy
+  steps:
+  - intent: steps_needed_agriculture_infrastructure_subsidy
+  - action: utter_steps_needed_agriculture_infrastructure_subsidy
