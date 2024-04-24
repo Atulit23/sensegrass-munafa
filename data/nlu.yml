@@ -731,6 +731,8 @@ nlu:
 - intent: ask_schemes_available_to_farmers
   examples: |
     - What are the schemes available to farmers?
+    - What are the schemes available?
+    - What are the welfare schemes available?
     - Tell me about schemes available to farmers.
     - Can you explain schemes available to farmers?
 
