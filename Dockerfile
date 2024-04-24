@@ -7,9 +7,9 @@ RUN pip install rasa==3.6.19
 WORKDIR /app
 COPY . .
 
-RUN rasa train
+# RUN rasa train
 
-USER 5055
+USER 1001
 
 ENTRYPOINT ["rasa"]
 
