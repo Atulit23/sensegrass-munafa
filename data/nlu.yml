@@ -100,8 +100,9 @@ nlu:
     - how to do kyc
     - how to avail kyc
     - how to complete kyc
-    - how do i complete complete kyc
+    - how do i complete kyc
     - what are the stpes i have to go through to complete kyc on munafa
+    - what are the steps that i have to under take to complete my kyc?
 
 - intent: loans
   examples: |
@@ -133,6 +134,7 @@ nlu:
   examples: |
     - What types of insurance are available?
     - What insurances are available?
+    - What are the insurances available on munafa?
 
 - intent: livestock
   examples: |
@@ -192,6 +194,7 @@ nlu:
   examples: |
     - How many farmers have enrolled under the Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY) so far?
     - How many farmers have enrolled under PM-KMY?
+    - How many farmers have availed PM-KMY?
 
 - intent: ask_pmfby_objective
   examples: |
@@ -204,6 +207,7 @@ nlu:
     - How many farmer applications were insured under the Pradhan Mantri Fasal Bima Yojana (PMFBY) since its launch?
     - How many farmer applications have been insured under the Pradhan Mantri Fasal Bima Yojana (PMFBY)?
     - How many farmer applications have been insured under the PMFBY?
+    - How many farmer have been insured under the PMFBY?
 
 - intent: ask_miss_objective
   examples: |
@@ -275,6 +279,7 @@ nlu:
 - intent: ask_shc_purpose
   examples: |
     - What is the purpose of the Soil Health Card (SHC) scheme?
+    - What is the objective of the Soil Health Card (SHC) scheme?
     - Why was the Soil Health Card scheme implemented?
 
 - intent: ask_shc_target
@@ -285,6 +290,7 @@ nlu:
 - intent: ask_rad_objective
   examples: |
     - What is the objective of the Rainfed Area Development (RAD) programme?
+    - What is the purpose of the Rainfed Area Development (RAD) programme?
     - What does RAD aim to achieve?
 
 - intent: ask_rad_area_covered
@@ -295,6 +301,8 @@ nlu:
 - intent: ask_pdmc_goal
   examples: |
     - What is the goal of the Per Drop More Crop (PDMC) scheme?
+    - What is the purpose of the Per Drop More Crop (PDMC) scheme?
+    - What is the objective of the Per Drop More Crop (PDMC) scheme?
     - What does PDMC aim to accomplish?
 
 - intent: ask_pdmc_area_covered
@@ -305,6 +313,7 @@ nlu:
 - intent: ask_mif_purpose
   examples: |
     - What is the purpose of the Micro Irrigation Fund (MIF)?
+    - What is the objective of the Micro Irrigation Fund (MIF)?
     - Why was MIF established?
 
 - intent: ask_mif_initial_corpus
@@ -325,6 +334,7 @@ nlu:
 - intent: ask_smam_objectives
   examples: |
     - What are the objectives of the Sub-Mission on Agriculture Mechanization (SMAM)?
+    - What is the purpose of the Sub-Mission on Agriculture Mechanization (SMAM)?
     - What does SMAM focus on?
 
 - intent: ask_smam_machinery_distributed
@@ -335,6 +345,7 @@ nlu:
 - intent: ask_crop_residue_management_objective
   examples: |
     - What is the objective of the Crop Residue Management scheme?
+    - What is the purpose of the Crop Residue Management scheme?
     - What does Crop Residue Management scheme aim to achieve?
 
 - intent: ask_crop_residue_management_fund_released
@@ -345,6 +356,8 @@ nlu:
 - intent: ask_agro_forestry_focus
   examples: |
     - What is the focus of the Agro-forestry scheme?
+    - What is the purpose of the Agro-forestry scheme?
+    - What is the objective of the Agro-forestry scheme?
     - What does the Agro-forestry scheme aim to promote?
 
 - intent: ask_nfsm_objective
@@ -360,11 +373,14 @@ nlu:
 - intent: ask_smsp_objective
   examples: |
     - What is the objective of the Sub-Mission on Seed and Planting Material (SMSP)?
+    - What is the purpose of the Sub-Mission on Seed and Planting Material (SMSP)?
     - What does SMSP aim to achieve?
 
 - intent: ask_nmeo_oil_palm_focus
   examples: |
     - What is the focus of the National Mission on Edible Oils (NMEO)-Oil Palm?
+    - What is the objective of the National Mission on Edible Oils (NMEO)-Oil Palm?
+    - What is the purpose of the National Mission on Edible Oils (NMEO)-Oil Palm?
     - What does NMEO-Oil Palm aim to promote?
 
 - intent: ask_nmeo_oil_palm_additional_area
@@ -375,6 +391,7 @@ nlu:
 - intent: ask_midh_objective
   examples: |
     - What is the objective of the Mission for Integrated Development of Horticulture (MIDH)?
+    - What is the purpose of the Mission for Integrated Development of Horticulture (MIDH)?
     - What does MIDH aim to achieve?
 
 - intent: ask_midh_additional_area_covered
@@ -395,16 +412,21 @@ nlu:
 - intent: ask_isam_purpose
   examples: |
     - What is the purpose of the Integrated Scheme for Agriculture Marketing (ISAM)?
+    - What is the objective of the Integrated Scheme for Agriculture Marketing (ISAM)?
     - What does ISAM aim to achieve?
 
 - intent: ask_e_nam_scheme
   examples: |
     - What is the National Agriculture Market (e-NAM) scheme?
+    - what is enam scheme?
+    - what is e-nam scheme?
     - What does e-NAM facilitate?
 
 - intent: ask_movcdner_goal
   examples: |
     - What is the goal of the Mission Organic Value Chain Development for North Eastern Region?
+    - What is the purpose of the Mission Organic Value Chain Development for North Eastern Region?
+    - What is the objective of the Mission Organic Value Chain Development for North Eastern Region?
     - What does MOVCDNER aim to achieve?
 
 - intent: ask_movcdner_fund_released
@@ -415,6 +437,8 @@ nlu:
 - intent: ask_smae_objective
   examples: |
     - What is the objective of the Sub-Mission on Agriculture Extension (SMAE)?
+    - What is the purpose of the Sub-Mission on Agriculture Extension (SMAE)?
+    - What are the goals of the Sub-Mission on Agriculture Extension (SMAE)?
     - What does SMAE aim to achieve?
 
 - intent: ask_smae_digital_initiatives
@@ -425,6 +449,7 @@ nlu:
 - intent: ask_digital_agriculture_objective
   examples: |
     - What is the objective of Digital Agriculture?
+    - What is the purpose of Digital Agriculture?
     - What does Digital Agriculture aim to achieve?
 
 - intent: ask_agristack_foundational_layer
@@ -438,6 +463,7 @@ nlu:
     - Can you provide an overview of PM-KISAN scheme?
     - What is PM-KISAN?
     - What is PM-KISAN scheme?
+    - How does PM-KISAN benefits farmers?
     - Tell me about PM-KISAN scheme
     - What is Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme?
     - What are the benefits of Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) scheme?
@@ -449,6 +475,7 @@ nlu:
     - Can you summarize PM-KMY scheme?
     - What is PM-KMY scheme?
     - What is PM-KMY?
+    - How does PM-KMY benefits farmers?
     - What is Pradhan Mantri Kisan MaanDhan Yojana?
     - Tell me about PM-KMY?
     - What are the benefits of Pradhan Mantri Kisan MaanDhan Yojana (PM-KMY)?
@@ -459,6 +486,7 @@ nlu:
     - Give me a brief about Pradhan Mantri Fasal Bima Yojana (PMFBY) scheme.
     - What is the overview of PMFBY scheme?
     - What is PMFBY scheme?
+    - How does PMFBY benefits farmers?
     - What is Pradhan Mantri Fasal Bima Yojana (PMFBY) scheme?
     - What are the benefits of Pradhan Mantri Fasal Bima Yojana (PMFBY) scheme?
     - How is Pradhan Mantri Fasal Bima Yojana (PMFBY) scheme beneficial?
@@ -469,6 +497,7 @@ nlu:
     - Give me a brief about Modified Interest Subvention Scheme (MISS).
     - Can you summarize the MISS scheme?
     - What is MISS scheme?
+    - How does MISS benefits farmers?
     - What is Modified Interest Subvention Scheme?
     - What are the benefits of Modified Interest Subvention Scheme (MISS)?
     - How is Modified Interest Subvention Scheme (MISS) beneficial?
@@ -480,6 +509,7 @@ nlu:
     - What are the benefits of Agriculture Infrastructure Fund (AIF) scheme.
     - How is Agriculture Infrastructure Fund (AIF) scheme beneficial?
     - What is the overview of AIF scheme?
+    - How does AIF benefits farmers?
     - What is AIF scheme?
     - What is Agriculture Infrastructure Fund scheme?
     - Tell me about AIF scheme?
@@ -489,6 +519,8 @@ nlu:
     - Give me a brief about the Formation & Promotion of new 10,000 FPOs scheme.
     - What are the benefits of Formation & Promotion of new 10,000 FPOs scheme?
     - How is Formation & Promotion of new 10,000 FPOs scheme beneficial?
+    - How does Formation & Promotion of new 10,000 FPOs benefits farmers?
+    - How does FPO benefits farmers?
     - What is the overview of the FPO formation scheme?
     - What is FPO formation scheme?
     - Tell me about FPO formation scheme
@@ -499,6 +531,7 @@ nlu:
     - What are the benefits of National Beekeeping and Honey Mission (NBHM) scheme?
     - How is National Beekeeping and Honey Mission (NBHM) scheme beneficial?
     - Can you summarize NBHM scheme?
+    - How does NBHM benefits farmers?
     - What is NBHM scheme?
     - What is National Beekeeping and Honey Mission scheme?
     - Tell me about NBHM scheme?
@@ -509,6 +542,7 @@ nlu:
     - What are the benefits of Market Intervention Scheme and Price Support Scheme (MIS-PSS)?
     - How is Market Intervention Scheme and Price Support Scheme (MIS-PSS) beneficial?
     - What is the goal of MIS-PSS?
+    - How does MIS-PSS benefits farmers?
     - What is MIS-PSS?
     - Tell me about MIS-PSS
     - What is Market Intervention Scheme and Price Support Scheme (MIS-PSS)
@@ -518,6 +552,7 @@ nlu:
     - Give me a brief about Namo Drone Didi scheme.
     - What are the benefits of Namo Drone Didi scheme?
     - How is Namo Drone Didi scheme beneficial?
+    - How does Namo Drone Didi benefits farmers?
     - Can you provide an overview of Namo Drone Didi scheme?
     - What is Namo Drone Didi scheme
     - Tell me about Namo Drone Didi scheme
@@ -528,13 +563,16 @@ nlu:
     - What are the benefits of Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR)?
     - How is Rastriya Krishi Vikas Yojana-Detailed Project based schemes (RKVY-DPR) beneficial?
     - What is the RKVY-DPR scheme about?
+    - How does RKVY-DPR benefits farmers?
     - What is the RKVY-DPR scheme?
     - Tell me about RKVY-DPR scheme?
+
 - intent: ask_shc_scheme_brief
   examples: |
     - Give me a brief about Soil Health Card (SHC) scheme.
     - Can you summarize the SHC scheme?
     - What is SHC scheme?
+    - How does SHC benefits farmers?
     - Tell me about SHC scheme?
     - What are the benefits of the Soil Health Card scheme?
     - How is the Soil Health Card scheme beneficial?
@@ -545,6 +583,7 @@ nlu:
     - What is the RAD scheme?
     - What is the Rainfed Area Development scheme?
     - Tell me about RAD scheme?
+    - How does RAD benefits farmers?
     - What are the benefits of the Rainfed Area Development scheme?
     - How is the Rainfed Area Development scheme beneficial?
 
@@ -554,6 +593,7 @@ nlu:
     - What is PDMC scheme?
     - What is Per Drop More Crop (PDMC) scheme?
     - Tell me about PDMC scheme?
+    - How does PDMC benefits farmers?
     - What are the benefits of the Per Drop More Crop scheme?
     - How is the Per Drop More Crop scheme beneficial?
 
@@ -563,6 +603,7 @@ nlu:
     - Can you provide an overview of MIF scheme?
     - What is MIF scheme?
     - What is Micro Irrigation Fund scheme?
+    - How does MIF benefits farmers?
     - Tell me about MIF scheme?
     - What are the benefits of the Micro Irrigation Fund scheme?
     - How is the Micro Irrigation Fund scheme beneficial?
@@ -574,6 +615,7 @@ nlu:
     - What is Paramparagat Krishi Vikas Yojana scheme?
     - Tell me about Paramparagat Krishi Vikas Yojana scheme
     - Tell me about PKVY
+    - How does PKVY benefits farmers?
     - What are the benefits of the Paramparagat Krishi Vikas Yojana scheme?
     - How is the Paramparagat Krishi Vikas Yojana scheme beneficial?
 
@@ -582,6 +624,7 @@ nlu:
     - Give me a brief about Sub-Mission on Agriculture Mechanization (SMAM) scheme.
     - What is SMAM scheme?
     - Can you tell me about SMAM scheme?
+    - How does SMAM benefits farmers?
     - What are the benefits of the Sub-Mission on Agriculture Mechanization scheme?
     - How is the Sub-Mission on Agriculture Mechanization scheme beneficial?
 
@@ -590,6 +633,7 @@ nlu:
     - Give me a brief about Crop Residue Management scheme.
     - What is Crop Residue Management scheme?
     - What is CRM scheme?
+    - How does CRM benefits farmers?
     - Can you tell me about Crop Residue Management scheme?
     - What are the benefits of the Crop Residue Management scheme?
     - How is the Crop Residue Management scheme beneficial?
@@ -598,6 +642,7 @@ nlu:
   examples: |
     - Give me a brief about Agro-forestry scheme.
     - What is Agro-forestry scheme?
+    - How does Agro-forestry benefits farmers?
     - Can you tell me about Agro-forestry scheme?
     - What are the benefits of the Agro-forestry scheme?
     - How is the Agro-forestry scheme beneficial?
@@ -607,6 +652,7 @@ nlu:
     - Give me a brief about National Food Security Mission (NFSM) scheme.
     - What is NFSM scheme?
     - Can you tell me about NFSM scheme?
+    - How does NFSM benefits farmers?
     - What are the benefits of the National Food Security Mission scheme?
     - How is the National Food Security Mission scheme beneficial?
 
@@ -615,6 +661,7 @@ nlu:
     - Give me a brief about Sub-Mission on Seed and Planting Material (SMSP) scheme.
     - What is SMSP scheme?
     - Can you tell me about SMSP scheme?
+    - How does SMSP benefits farmers?
     - What are the benefits of the Sub-Mission on Seed and Planting Material scheme?
     - How is the Sub-Mission on Seed and Planting Material scheme beneficial?
 
@@ -622,6 +669,7 @@ nlu:
   examples: |
     - Give me a brief about National Mission on Edible Oils (NMEO)-Oil Palm scheme.
     - What is NMEO-Oil Palm scheme?
+    - How does NMEO-Oil Palm benefits farmers?
     - Can you tell me about NMEO-Oil Palm scheme?
     - What are the benefits of the National Mission on Edible Oils-Oil Palm scheme?
     - How is the National Mission on Edible Oils-Oil Palm scheme beneficial?
@@ -630,6 +678,7 @@ nlu:
   examples: |
     - Give me a brief about Mission for Integrated Development of Horticulture (MIDH) scheme.
     - What is MIDH scheme?
+    - How does MIDH benefits farmers?
     - Can you tell me about MIDH scheme?
     - What are the benefits of the Mission for Integrated Development of Horticulture scheme?
     - How is the Mission for Integrated Development of Horticulture scheme beneficial?
@@ -638,6 +687,7 @@ nlu:
   examples: |
     - Give me a brief about National Bamboo Mission (NBM) scheme.
     - What is NBM scheme?
+    - How does NBM benefits farmers?
     - Can you tell me about NBM scheme?
     - What are the benefits of the National Bamboo Mission scheme?
     - How is the National Bamboo Mission scheme beneficial?
@@ -646,6 +696,7 @@ nlu:
   examples: |
     - Give me a brief about Integrated Scheme for Agriculture Marketing (ISAM) scheme.
     - What is ISAM scheme?
+    - How does ISAM benefits farmers?
     - Can you tell me about ISAM scheme?
     - What are the benefits of the Integrated Scheme for Agriculture Marketing scheme?
     - How is the Integrated Scheme for Agriculture Marketing scheme beneficial?
@@ -655,6 +706,7 @@ nlu:
     - Give me a brief about Mission Organic Value Chain Development for North Eastern Region scheme.
     - What is MOVCDNER scheme?
     - Can you tell me about MOVCDNER scheme?
+    - How does MOVCDNER benefits farmers?
     - What are the benefits of the Mission Organic Value Chain Development for North Eastern Region scheme?
     - How is the Mission Organic Value Chain Development for North Eastern Region scheme beneficial?
 
@@ -663,6 +715,7 @@ nlu:
     - Give me a brief about Sub-Mission on Agriculture Extension (SMAE) scheme.
     - What is SMAE scheme?
     - Can you tell me about SMAE scheme?
+    - How does SMAE benefits farmers?
     - What are the benefits of the Sub-Mission on Agriculture Extension scheme?
     - How is the Sub-Mission on Agriculture Extension scheme beneficial?
 
@@ -670,6 +723,7 @@ nlu:
   examples: |
     - Give me a brief about Digital Agriculture scheme.
     - What is Digital Agriculture scheme?
+    - How does Digital Agriculture benefits farmers?
     - Can you tell me about Digital Agriculture scheme?
     - What are the benefits of the Digital Agriculture scheme?
     - How is the Digital Agriculture scheme beneficial?
@@ -873,6 +927,7 @@ nlu:
     - What are the documents needed to apply for Namo Didi Scheme?
     - Could you tell me the required documents for Namo Didi Scheme application?
     - What documents do I need to submit for Namo Didi Scheme?
+
 - intent: ask_steps_Namo_Didi_Scheme
   examples: |
     - What are the steps needed to apply for Namo Didi Scheme?
@@ -900,6 +955,7 @@ nlu:
     - How to apply for Soil Health Card (SHC) scheme?
     - Can you guide me through the application process for SHC scheme?
     - What are the steps to apply for SHC scheme?
+
 - intent: ask_documents_SHC_scheme
   examples: |
     - What are the documents needed to apply for Soil Health Card (SHC) scheme?
@@ -1327,6 +1383,7 @@ nlu:
     - steps to avail agriculture infrastructure subsidy
     - how can I get agriculture infrastructure subsidy?
     - I want to apply for agriculture infrastructure subsidy
+    
 - intent: documents_needed_agriculture_infrastructure_subsidy
   examples: |
     - what are the documents needed to apply for agriculture infrastructure subsidy?

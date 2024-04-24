@@ -1,7 +1,6 @@
 version: "3.1"
 
 intents:
-  - gold
   - greet
   - goodbye
   - affirm
@@ -11,6 +10,7 @@ intents:
   - bot_challenge
   - faq
   - kyc
+  - gold
   - loans
   - tractor
   - crop
@@ -330,6 +330,7 @@ responses:
 
   utter_shc_target:
   - text: "The Government of India has decided to conduct 5 crore soil samples across the country during the years 2023-24 to 2025-26 for developing a nationwide soil fertility map."
+
   utter_rad_objective:
   - text: "RAD aims to promote Integrated Farming Systems in rainfed areas to enable farmers to maximize returns and mitigate the impacts of droughts, floods, or other extreme weather events."
 
