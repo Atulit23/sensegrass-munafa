@@ -7,14 +7,14 @@ RUN pip install rasa==3.6.19
 WORKDIR /app
 COPY . .
 
-# RUN rasa train
+RUN rasa train
 
 USER 5055
 
-# ENTRYPOINT ["rasa"]
+ENTRYPOINT ["rasa"]
 
-# CMD ["run", "--enable-api", "--port", "8080"]
-CMD ["rasa", "run", "actions", "--actions", "actions"]
+CMD ["run", "--enable-api", "--port", "8080"]
+# CMD ["rasa", "run", "actions", "--actions", "actions"]
 
 ADD config.yml config.yml
 ADD domain.yml domain.yml
